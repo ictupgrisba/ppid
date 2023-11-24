@@ -42,12 +42,12 @@
                         <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Jl. Gunung Pangilun</small>
                         <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>info@upgrisba.ac.id</small>
                     </div>
-                    <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></div>
+                    <div id="note" class="text-secondary d-none d-xl-flex"><small>Website Resmi Layanan Informasi Publik Universitas PGRI Sumatera Barat</small></div>
                     <div class="top-link">
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-twitter text-primary"></i></a>
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
-                        <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-primary"></i></a>
+                        <a href="https://www.facebook.com/upgrisba.ac.id/?locale=id_ID" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                        
+                        <a href="https://www.instagram.com/@upgrisba" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
+                        <a href="https://www.youtube.com/@STKIPPGRISumateraBarat" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-youtube text-primary"></i></a>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
                     <a href="index.html" class="navbar-brand">
-                        <h1 class="text-white fw-bold d-block">High<span class="text-secondary">Tech</span> </h1>
+                        <h1 class="text-white fw-bold d-block">PPID<span class="text-secondary">UPGRISBA</span> </h1>
                     </a>
                     <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -65,19 +65,36 @@
                     <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
                             <a href="index.html" class="nav-item nav-link active text-secondary">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <a href="project.html" class="nav-item nav-link">Projects</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
-                                    <a href="team.html" class="dropdown-item">Our Team</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
+                                    <a href="tentang" class="dropdown-item">Tentang PPID UPGRISBA</a>
+                                    <a href="profil" class="dropdown-item">Profil Singkat PPID UPGRISBA</a>
+                                    <a href="visimisi" class="dropdown-item">Visi dan Misi PPID UPGRISBA</a>
+                                    <a href="tupok" class="dropdown-item">Tugas Pokok dan Fungsi PPID UPGRISBA</a>
+                                    <a href="struktur" class="dropdown-item">Struktur Organisasi PPID UPGRISBA</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Informasi Publik</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="blog.html" class="dropdown-item">Informasi yang Disediakan Secara Berkala</a>
+                                    <a href="team.html" class="dropdown-item">Informasi yang Disediakan Secara Setiap Saat</a>
+                                    <a href="testimonial.html" class="dropdown-item">Informasi yang Disediakan Secara Serta-Merta</a>
+                                   
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Standar Layanan</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="blog.html" class="dropdown-item">Laporan Layanan Informasi</a>
+                                    <a href="team.html" class="dropdown-item">Alur dan Prosedur Layanan Informasi</a>
+                                    <a href="testimonial.html" class="dropdown-item">Alur dan Prosedur Keberatan Pengajuan Atas Informasi</a>
+                                   
+                                </div>
+                            </div>
+                            
+                           
                         </div>
                     </div>
                     <div class="d-none d-xl-flex flex-shirink-0">
@@ -90,8 +107,8 @@
                             </a>
                         </div>
                         <div class="d-flex flex-column pe-4 border-end">
-                            <span class="text-white-50">Have any questions?</span>
-                            <span class="text-secondary">Call: + 0123 456 7890</span>
+                            <span class="text-white-50">Hubungi Kami di?</span>
+                            <span class="text-secondary">Telp : (0751) 7053731</span>
                         </div>
                         <div class="d-flex align-items-center justify-content-center ms-4 ">
                             <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
@@ -110,26 +127,26 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img src="assets/img/carousel-1.jpg" class="img-fluid" alt="First slide">
+                        <img src="assets/img/rektor.jpg" class="img-fluid" alt="First slide">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
-                                <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
-                                <h1 class="text-white display-1 mb-4 animated fadeInRight">An Innovative IT Solutions Agency</h1>
-                                <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
-                                <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
-                                <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+                                <h6 class="text-secondary h4 animated fadeInUp">Selamat Datang di Website</h6>
+                                <h1 class="text-white display-1 mb-4 animated fadeInRight">Pejabat Pengelola Informasi dan Dokumentasi (PPID) </h1>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">Universitas PGRI Sumatera Barat</p>
+                                <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Permohonan Informasi Publik</button></a>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/carousel-2.jpg" class="img-fluid" alt="Second slide">
+                        <img src="assets/img/10.jpg" class="img-fluid" alt="Second slide">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
-                                <h6 class="text-secondary h4 animated fadeInUp">Best IT Solutions</h6>
-                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">Quality Digital Services You Really Need!</h1>
-                                <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt.</p>
-                                <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Read More</button></a>
-                                <a href="" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
+                                <h6 class="text-secondary h4 animated fadeInUp">Selamat Datang di Website</h6>
+                                <h1 class="text-white display-1 mb-4 animated fadeInLeft">Pejabat Pengelola Informasi dan Dokumentasi (PPID)</h1>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">Universitas PGRI Sumatera Barat</p>
+                                <a href="" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Permohonan Informasi Publik</button></a>
+                                
                             </div>
                         </div>
                     </div>
@@ -153,26 +170,26 @@
                 <div class="row">
                     <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
                         <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">99</h1>
-                            <h5 class="text-white mt-1">Success in getting happy customer</h5>
+                            <h1 class="me-3 text-primary counter-value">24000</h1>
+                            <h5 class="text-white mt-1">Alumni</h5>
                         </div>
                     </div>
                     <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
                         <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">25</h1>
-                            <h5 class="text-white mt-1">Thousands of successful business</h5>
+                            <h1 class="me-3 text-primary counter-value">8000</h1>
+                            <h5 class="text-white mt-1">Mahasiswa Aktif</h5>
                         </div>
                     </div>
                     <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
                         <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">120</h1>
-                            <h5 class="text-white mt-1">Total clients who love HighTech</h5>
+                            <h1 class="me-3 text-primary counter-value">1850</h1>
+                            <h5 class="text-white mt-1">Mahasiswa Baru </h5>
                         </div>
                     </div>
                     <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
                         <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">5</h1>
-                            <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
+                            <h1 class="me-3 text-primary counter-value">267</h1>
+                            <h5 class="text-white mt-1">Dosen</h5>
                         </div>
                     </div>
                 </div>
@@ -187,18 +204,19 @@
                 <div class="row g-5">
                     <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
                         <div class="h-100 position-relative">
-                            <img src="assets/img/about-1.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
+                            <img src="assets/img/pimpinan.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
                             <div class="position-absolute w-75" style="top: 25%; left: 25%;">
                                 <img src="assets/img/about-2.jpg" class="img-fluid w-100 rounded" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        <h5 class="text-primary">About Us</h5>
-                        <h1 class="mb-4">About HighTech Agency And It's Innovative IT Solutions</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
-                        <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
-                        <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
+                        <h5 class="text-primary">Selamat Datang di</h5>
+                        <h1 class="mb-4">PPID Universitas PGRI Sumatera Barat</h1>
+                        <p>Sesuai amanat Undang-Undang (UU) Nomor: 14 Tahun 2008 tentang Keterbukaan Informasi Publik (KIP), Universitas PGRI Sumatera Barat (UPGRISBA) sebagai badan publik berupaya memenuhi kebutuhan publik akan informasi dengan membuat laman ppid.upgrisba.ac.id</p>
+                        <p class="mb-4">Layanan Informasi Publik UPGRISBA disediakan untuk memudahkan publik mendapatkan informasi tentang UPGRISBA. Publik berhak mengajukan informasi publik yang dikelola oleh UPGRISBA sesuai ketentuan-ketentuan yang berlaku. UPGRISBA melayani seluruh permohonan informasi melalui Layanan Informasi Publik secara daring maupun luring.
+UPGRISBA juga menyediakan berbagai informasi publik, yang dapat diakses dari laman website ppid.upgrisba.ac.id maupun website upgrisba.ac.id.</p>
+                      
                     </div>
                 </div>
             </div>
@@ -210,8 +228,8 @@
         <div class="container-fluid services py-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Services</h5>
-                    <h1>Services Built Specifically For Your Business</h1>
+                    <h5 class="text-primary"></h5>
+                    <h1></h1>
                 </div>
                 <div class="row g-5 services-inner">
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
@@ -219,9 +237,9 @@
                             <div class="p-4 text-center services-content">
                                 <div class="services-content-icon">
                                     <i class="fa fa-code fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Web Design</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                                    <h4 class="mb-3">PROFIL PPID</h4>
+                                    <p class="mb-4">Pejabat Pengelola Informasi dan Dokumentasi</p>
+                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Baca Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
@@ -681,7 +699,7 @@
 
 
         <!-- Contact Start -->
-        <div class="container-fluid py-5 mb-5">
+       <!-- <div class="container-fluid py-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                     <h5 class="text-primary">Get In Touch</h5>
@@ -752,7 +770,7 @@
                     </div>
                 </div>
             </div> 
-        </div>
+        </div> -->
         <!-- Contact End -->
 
 
@@ -804,7 +822,7 @@
                 <hr class="text-light mt-5 mb-4">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start">
-                        <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2"></i> 2023 Universitas PGRI Sumatera Barat</a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
