@@ -27,4 +27,22 @@ class HomeController extends Controller
     public function struktur() {
         return view('struktur');
     }
+    public function laporan() {
+        return view('laporan');
+    }
+    public function infoberkala() {
+        return view('infoberkala');
+    }
+    public function infosetiapsaat() {
+        return view('infosetiapsaat');
+    }
+    public function infosertamerta() {
+        return view('infosertamerta');
+    }
+    public function alurlayanan() {
+        return view('alurlayanan');
+    }
+    public function alurkeberatan() {
+        return view('alurkeberatan');
+    }
 }

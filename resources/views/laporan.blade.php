@@ -119,7 +119,7 @@
         </div>
         <!-- Navbar End -->
         <!-- body start -->
-        <div class="container-tentang" align="center">TUGAS POKOK PPID UPGRISBA</div>
+        <div class="container-tentang" align="center">TENTANG PPID UPGRISBA</div>
         <p>1. ISI DISINI KONTENNYA</p>
         <p>2</p>
         <p>2</p>
@@ -149,7 +149,6 @@
                             
                         </div>
                     </div>
-                    
                   <!--  <div class="col-lg-3 col-md-6">
                         <a href="#" class="h3 text-secondary">Help Link</a>
                         <div class="mt-4 d-flex flex-column help-link">
@@ -168,16 +167,7 @@
                             <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> info@upgrisba.ac.id</a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                    <a href="#" class="h3 text-secondary">Lokasi :</a>
-                        <!--<div class="col-lg-6 wow fadeIn" data-wow-delay=".3s"> -->
-                            <div class="p-5 h-100 rounded contact-map">
-                            
-                                <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
                 </div>
-               
                 <hr class="text-light mt-5 mb-4">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start">

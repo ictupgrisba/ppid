@@ -89,7 +89,7 @@
                                 <div class="dropdown-menu rounded">
                                     <a href="laporan" class="dropdown-item">Laporan Layanan Informasi</a>
                                     <a href="alurlayanan" class="dropdown-item">Alur dan Prosedur Layanan Informasi</a>
-                                    <a href="alurkeberatan" class="dropdown-item">Alur dan Prosedur Keberatan Pengajuan Atas Informasi</a>
+                                    <a href="alurkeberatan" class="dropdown-item">Alur dan Prosedur Keberatan Pengajuan Atas Informasi</a> Informasi</a>
                                    
                                 </div>
                             </div>
@@ -119,7 +119,7 @@
         </div>
         <!-- Navbar End -->
         <!-- body start -->
-        <div class="container-tentang" align="center">TUGAS POKOK PPID UPGRISBA</div>
+        <div class="container-tentang" align="centerS">INFORMASI SERTA MERTA UNIVERITAS PGRI SUMATERA BARAT</div>
         <p>1. ISI DISINI KONTENNYA</p>
         <p>2</p>
         <p>2</p>
