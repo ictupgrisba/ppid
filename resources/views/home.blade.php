@@ -64,16 +64,16 @@
                     </button>
                     <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                            <a href="index.html" class="nav-item nav-link active text-secondary">Home</a>
+                            <a href="home" class="nav-item nav-link active text-secondary">Home</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
+                                <a href="profil" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
                                 <div class="dropdown-menu rounded">
                                     <a href="tentang" class="dropdown-item">Tentang PPID UPGRISBA</a>
                                     <a href="profil" class="dropdown-item">Profil Singkat PPID UPGRISBA</a>
                                     <a href="visimisi" class="dropdown-item">Visi dan Misi PPID UPGRISBA</a>
                                     <a href="tupok" class="dropdown-item">Tugas Pokok dan Fungsi PPID UPGRISBA</a>
                                     <a href="struktur" class="dropdown-item">Struktur Organisasi PPID UPGRISBA</a>
-                                </div>
+                                </div>  
                             </div>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Informasi Publik</a>
