@@ -190,7 +190,6 @@
 </div>
 <!-- Carousel End -->
 
-
 <!-- Fact Start -->
 <div class="container-fluid bg-secondary py-5">
     <div class="container">
@@ -224,15 +223,13 @@
 </div>
 <!-- Fact End -->
 
-
 <!-- About Start -->
 <div class="container-fluid py-5 my-5">
     <div class="container pt-5">
         <div class="row g-5">
             <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
                 <div class="h-100 position-relative">
-                    <img src="assets/img/about-2.jpg" class="img-fluid w-75 rounded" alt=""
-                         style="margin-bottom: 25%;">
+                    <img src="assets/img/about-2.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
                     <div class="position-absolute w-75" style="top: 25%; left: 25%;">
                         <img src="assets/img/pimpinan.jpg" class="img-fluid w-100 rounded" alt="">
                     </div>
@@ -281,7 +278,7 @@ $blogs = [
     ],
 ];
 ?>
-<!-- Blog Start -->
+    <!-- Blog Start -->
 <div class="container-fluid blog py-5 mb-5">
     <div class="container">
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
@@ -423,7 +420,8 @@ $projects = [
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".{{$i +2}}s">
                     <div class="project-item">
                         <div class="project-img">
-                            <img src="{{$project['img_url']}}" class="img-fluid w-100 rounded" alt="{{$project['title']}}">
+                            <img src="{{$project['img_url']}}" class="img-fluid w-100 rounded"
+                                 alt="{{$project['title']}}">
                             <div class="project-content">
                                 <a href="{{$project['detail_url']}}" class="text-center">
                                     <h4 class="text-secondary">{{$project['title']}}</h4>
@@ -439,213 +437,226 @@ $projects = [
 </div>
 <!-- Project End -->
 
-<!-- Team Start -->
-<div class="container-fluid py-5 mb-5 team">
+<?php
+$informations = [
+    "maklumat_url" => "https://via.placeholder.com/150",
+    "data" => [
+        [
+            "detail_url" => "https://upgrisba.ac.id",
+            "body" => "Surat Edaran Komisi Informasi Pusat tentang Pelayanan Informasi dalam Masa Darurat Kesehatan Akibat COVID-19",
+        ],
+        [
+            "detail_url" => "https://upgrisba.ac.id",
+            "body" => "Struktur Organisasi",
+        ],
+        [
+            "detail_url" => "https://upgrisba.ac.id",
+            "body" => "Tugas dan Fungsi PPID",
+        ],
+        [
+            "detail_url" => "https://upgrisba.ac.id",
+            "body" => "Laporan Layanan Informasi Publik",
+        ],
+        [
+            "detail_url" => "https://upgrisba.ac.id",
+            "body" => "Kalender Akademik UPGRISBA",
+        ],
+        [
+            "detail_url" => "https://upgrisba.ac.id",
+            "body" => "Peraturan mengenai Keterbukaan Informasi Publik",
+        ],
+        [
+            "detail_url" => "https://upgrisba.ac.id",
+            "body" => "Penanganan Sengket Informasi Publik",
+        ],
+    ]
+];
+?>
+    <!-- Information Start -->
+<div class="container-fluid project py-5 mb-5">
     <div class="container">
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-primary">Our Team</h5>
-            <h1>Meet our expert Team</h1>
+            <h5 class="text-primary">Informasi</h5>
+            <h1>Jenis-jenis Informasi</h1>
         </div>
-        <div class="owl-carousel team-carousel wow fadeIn" data-wow-delay=".5s">
-            <div class="rounded team-item">
-                <div class="team-content">
-                    <div class="team-img-icon">
-                        <div class="team-img rounded-circle">
-                            <img src="assets/img/team-1.jpg" class="img-fluid w-100 rounded-circle" alt="">
+        <div class="row g-4">
+            <div class="col-md-8">
+                <div class="row g-2">
+                    @for($i = 0; $i < count($informations['data']); $i++)
+                        <div class="col-md-6 wow fadeIn" data-wow-delay=".{{$i +2}}s">
+                            <div class="mx-2 py-1 border-primary border-bottom border-3">
+                                <a href="{{$informations['data'][$i]['detail_url']}}">
+                                    {{ucfirst($informations['data'][$i]['body'])}}
+                                </a>
+                            </div>
                         </div>
-                        <div class="team-name text-center py-3">
-                            <h4 class="">Full Name</h4>
-                            <p class="m-0">Designation</p>
-                        </div>
-                        <div class="team-icon d-flex justify-content-center pb-4">
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
+                    @endfor
                 </div>
             </div>
-            <div class="rounded team-item">
-                <div class="team-content">
-                    <div class="team-img-icon">
-                        <div class="team-img rounded-circle">
-                            <img src="assets/img/team-2.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                        </div>
-                        <div class="team-name text-center py-3">
-                            <h4 class="">Full Name</h4>
-                            <p class="m-0">Designation</p>
-                        </div>
-                        <div class="team-icon d-flex justify-content-center pb-4">
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="rounded team-item">
-                <div class="team-content">
-                    <div class="team-img-icon">
-                        <div class="team-img rounded-circle">
-                            <img src="assets/img/team-3.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                        </div>
-                        <div class="team-name text-center py-3">
-                            <h4 class="">Full Name</h4>
-                            <p class="m-0">Designation</p>
-                        </div>
-                        <div class="team-icon d-flex justify-content-center pb-4">
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="rounded team-item">
-                <div class="team-content">
-                    <div class="team-img-icon">
-                        <div class="team-img rounded-circle">
-                            <img src="assets/img/team-4.jpg" class="img-fluid w-100 rounded-circle" alt="">
-                        </div>
-                        <div class="team-name text-center py-3">
-                            <h4 class="">Full Name</h4>
-                            <p class="m-0">Designation</p>
-                        </div>
-                        <div class="team-icon d-flex justify-content-center pb-4">
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-4">
+                <img src="{{$informations['maklumat_url']}}" class="img-fluid w-100 rounded" alt="Maklumat">
             </div>
         </div>
     </div>
 </div>
-<!-- Team End -->
+<!-- Information End -->
 
-<!-- Testimonial Start -->
-<div class="container-fluid testimonial py-5 mb-5">
+<?php
+$aspirations = [
+    [
+        "title" => "Lapor!",
+        "body" => "Sampaikan aspirasi dan pengaduan secara online",
+        "img_url" => "assets/img/project-1.jpg",
+        "detail_url" => "https://upgrisba.ac.id"
+    ],
+    [
+        "title" => "Formulir Informasi dan Keberatan",
+        "body" => "Dapatkan formulir online Tentang Pengajuan Informasi dan Keberatan",
+        "img_url" => "assets/img/project-2.jpg",
+        "detail_url" => "https://upgrisba.ac.id"
+    ],
+    [
+        "title" => "Informasi Mahasiswa Baru",
+        "body" => "Dapatkan Informasi Penerimaan Mahasiswa Baru Universitas PGRI Sumatera Barat",
+        "img_url" => "assets/img/project-3.jpg",
+        "detail_url" => "https://pmb.upgrisba.ac.id"
+    ]
+];
+?>
+    <!-- Aspiration Start -->
+<div class="container-fluid project py-5 mb-5">
     <div class="container">
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-primary">Our Testimonial</h5>
-            <h1>Our Client Saying!</h1>
+            <h5 class="text-danger">Aspirasi Publik</h5>
+            <h1>Jenis-jenis Aspirasi Publik</h1>
         </div>
-        <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
-            <div class="testimonial-item border p-4">
-                <div class="d-flex align-items-center">
-                    <div class="">
-                        <img src="assets/img/testimonial-1.jpg" alt="">
-                    </div>
-                    <div class="ms-4">
-                        <h4 class="text-secondary">Client Name</h4>
-                        <p class="m-0 pb-3">Profession</p>
-                        <div class="d-flex pe-5">
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
+        <div class="row g-5">
+            @foreach($aspirations as $i => $aspiration)
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".{{$i +2}}s">
+                    <div class="aspiration-item">
+                        <div class="aspiration-img">
+                            <img src="{{$aspiration['img_url']}}" class="img-fluid w-100 rounded"
+                                 alt="{{$aspiration['title']}}">
+                            <div class="aspiration-content">
+                                <a href="{{$aspiration['detail_url']}}" class="text-center">
+                                    <h4 class="text-secondary">{{$aspiration['title']}}</h4>
+                                    <p class="m-0 text-white">{{$aspiration['body']}}</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="border-top mt-4 pt-3">
-                    <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor
-                        eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+            @endforeach
+        </div>
+    </div>
+</div>
+<!-- Aspiration End -->
+
+<?php
+$policies = [
+    [
+        "body" => "Peraturan Menteri Pendidikan Dan Kebudayaan Republik Indonesia <a>Nomor 2 Tahun 2020</a> Tentang Tata Cara Pelaksanaan Uji Kompetensi Mahasiswa Bidang Kesehatan (Jenis : Informasi Setiap Saat)",
+        "file_url" => "assets/img/project-1.pdf", // nullable
+        "detail_url" => "https://upgrisba.ac.id", // nullable
+        "children" => null // nullable
+    ],
+    [
+        "body" => "Peraturan Menteri Pendidikan Dan Kebudayaan Republik Indonesia <a>Nomor 3 Tahun 2020</a> Tentang Standar Nasional Pendidikan Tinggi (Jenis : Informasi Setiap Saat)",
+        "file_url" => "assets/img/project-1.pdf", // nullable
+        "detail_url" => "https://upgrisba.ac.id", // nullable
+        "children" => null
+    ],
+    [
+        "body" => "Peraturan Menteri Pendidikan Dan Kebudayaan Republik Indonesia Nomor 5 Tahun 2020 Tentang Akreditasi Program Studi Dan Perguruan Tinggi (Jenis : Informasi Setiap Saat)",
+        "file_url" => "assets/img/project-1.pdf", // nullable
+        "detail_url" => "https://upgrisba.ac.id", // nullable
+        "children" => null
+    ],
+    [
+        "body" => "Peraturan Menteri Pendidikan Dan Kebudayaan Republik Indonesia Nomor 6 Tahun 2020 Tentang Penerimaan Mahasiswa Baru Program Sarjana Pada Perguruan Tinggi Negeri (Jenis : Informasi Setiap Saat)",
+        "file_url" => "assets/img/project-1.pdf", // nullable
+        "detail_url" => "https://upgrisba.ac.id", // nullable
+        "children" => null
+    ],
+    [
+        "body" => "Peraturan Menteri Pendidikan Dan Kebudayaan Republik Indonesia Nomor 7 Tahun 2020 Tentang Pendirian, Perubahan, Pembubaran Perguruan Tinggi Negeri, Dan Pendirian, Perubahan, Pencabutan Izin Perguruan Tinggi Swasta (Jenis : Informasi Setiap Saat)",
+        "file_url" => "assets/img/project-1.pdf", // nullable
+        "detail_url" => "https://upgrisba.ac.id", // nullable
+        "children" => null
+    ],
+    [
+        "body" => "Pedoman Pengelolaan Kepegawaian",
+        "file_url" => null,
+        "detail_url" => null,
+        "children" => [
+            [
+                "body" => "Permenristekdikti Nomor 98 Tahun 2016, Tentang Pemberian Kuasa dan Delegasi Wewenang Pelaksanaan Kegiatan Administrasi Kepegawaian Kepada Pejabat Tertentu di Lingkungan Kemenristekdikti",
+                "file_url" => "assets/img/project-1.pdf",
+                "detail_url" => "https://upgrisba.ac.id",
+                "children" => null
+            ],
+            [
+                "body" => "Permenristekdikti Nomor 8 Tahun 2018, Tata Cara Pengangkatan Pegawai Negeri Sipil dalam Jabatan Fungsional Dosen melalui Penyesuaian atau Impasing",
+                "file_url" => "assets/img/project-1.pdf",
+                "detail_url" => "https://upgrisba.ac.id",
+                "children" => null
+            ],
+            [
+                "body" => "Permenristekdikti Nomor 38 Tahun 2016, Tentang Tata Cara Pengangkatan dan Pemberhentian Dosen dan Tenaga Kependidikan sebagai Pegawai Pemerintah dengan Perjanjian Kerja",
+                "file_url" => "assets/img/project-1.pdf",
+                "detail_url" => "https://upgrisba.ac.id",
+                "children" => null
+            ],
+            [
+                "body" => "Permenristekdikti Nomor 14 Tahun 2019, Tentang Pelaksanaan Pemberian Tunjangan Kinerja Pegawai di Lingkungan Kemenristekdikti",
+                "file_url" => "assets/img/project-1.pdf",
+                "detail_url" => "https://upgrisba.ac.id",
+                "children" => null
+            ],
+            [
+                "body" => "Permenristekdikti Nomor 19 Tahun 2017, Tentang Pengangkatan Pemberhentian Pemimpin PTN",
+                "file_url" => "assets/img/project-1.pdf",
+                "detail_url" => "https://upgrisba.ac.id",
+                "children" => null
+            ],
+            [
+                "body" => "Permenristekdikti Nomor 91 Tahun 2017, Tentang Perpindahan Dosen dan Alih Tugas PNS Non Dosen menjadi Dosen",
+                "file_url" => "assets/img/project-1.pdf",
+                "detail_url" => "https://upgrisba.ac.id",
+                "children" => null
+            ]
+        ]
+    ]
+];
+$policy_cover_url = "https://ppid.unp.ac.id/wp-content/uploads/2020/02/hukum.jpg";
+?>
+    <!-- Policy Start -->
+<div class="container-fluid project py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Peraturan</h5>
+            <h1>Peraturan-peraturan Terbaru</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="row g-4">
+                    @for($i = 0; $i < 3; $i++)
+                        <div class="col-md-12 wow fadeIn" data-wow-delay=".{{$i +2}}s">
+                            <ul style="list-style-position: outside;">
+                                <li>{!! ucfirst($policies[$i]['body']) !!}</li>
+                                <li style="list-style-type: none;"><a class="btn btn-outline-dark float-end" href="{{$policies[$i]['detail_url']}}">Unduh</a></li>
+                            </ul>
+                        </div>
+                    @endfor
                 </div>
             </div>
-            <div class="testimonial-item border p-4">
-                <div class=" d-flex align-items-center">
-                    <div class="">
-                        <img src="assets/img/testimonial-2.jpg" alt="">
-                    </div>
-                    <div class="ms-4">
-                        <h4 class="text-secondary">Client Name</h4>
-                        <p class="m-0 pb-3">Profession</p>
-                        <div class="d-flex pe-5">
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="border-top mt-4 pt-3">
-                    <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor
-                        eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                </div>
-            </div>
-            <div class="testimonial-item border p-4">
-                <div class=" d-flex align-items-center">
-                    <div class="">
-                        <img src="assets/img/testimonial-3.jpg" alt="">
-                    </div>
-                    <div class="ms-4">
-                        <h4 class="text-secondary">Client Name</h4>
-                        <p class="m-0 pb-3">Profession</p>
-                        <div class="d-flex pe-5">
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="border-top mt-4 pt-3">
-                    <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor
-                        eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                </div>
-            </div>
-            <div class="testimonial-item border p-4">
-                <div class=" d-flex align-items-center">
-                    <div class="">
-                        <img src="assets/img/testimonial-4.jpg" alt="">
-                    </div>
-                    <div class="ms-4">
-                        <h4 class="text-secondary">Client Name</h4>
-                        <p class="m-0 pb-3">Profession</p>
-                        <div class="d-flex pe-5">
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                            <i class="fas fa-star me-1 text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="border-top mt-4 pt-3">
-                    <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor
-                        eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                </div>
+            <div class="col-md-6">
+                <img src="{{$policy_cover_url}}" class="img-fluid w-100 rounded wow fadeIn" alt="Maklumat" data-wow-delay=".7s">
             </div>
         </div>
     </div>
 </div>
-
-<!-- Testimonial End -->
-
+<!-- Policy End -->
 
 <!-- Contact Start -->
 <!-- <div class="container-fluid py-5 mb-5">
