@@ -642,7 +642,10 @@
 
 .testimonial-item {
     background: #e3f0eb;
-
+}
+.testimonial-item img {
+    height: 10em;
+    object-fit: cover;
 }
 
 .testimonial-carousel .owl-dots {
