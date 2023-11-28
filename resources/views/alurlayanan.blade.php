@@ -124,7 +124,7 @@
                 </nav>
             </div>
         </div>
-        <div class="container-tentang" align="center">STRUKTUR ORGANISASI PPID UPGRISBA</div>
+        <div class="container-tentang" align="center">ALUR DAN PROSEDUR LAYANAN INFORMASI</div>
         <p>1. ISI DISINI KONTENNYA</p>
         <p>2</p>
         <p>2</p>
