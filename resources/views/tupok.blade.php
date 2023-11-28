@@ -147,7 +147,7 @@
                             <a href="https://www.upgrisba.ac.id" class="mb-2 text-white"><i class="fab fa-web text-primary"></i>Website Utama Upgrisba</a>
                             <a href="https://www.facebook.com/upgrisba.ac.id/?locale=id_ID" class="mb-2 text-white"><i class="fab fa-facebook text-primary"></i>Universitas PGRI Sumatera Barat</a>
                             <a href="https://www.instagram.com/@upgrisba" class="mb-2 text-white"><i class="fab fa-instagram text-primary"></i>Universitas PGRI Sumatera Barat</a>
-                            <a href="https://www.instagram.com/upgrisba" class="mb-2 text-white"><i class="fab fa-youtube text-primary"></i>Universitas PGRI Sumatera Barat</a>
+                            <a href="https://www.youtube.com/upgrisba" class="mb-2 text-white"><i class="fab fa-youtube text-primary"></i>Universitas PGRI Sumatera Barat</a>
                             
                         </div>
                     </div>
