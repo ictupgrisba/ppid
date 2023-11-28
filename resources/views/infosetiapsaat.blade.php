@@ -42,9 +42,9 @@
                         <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Jl. Gunung Pangilun</small>
                         <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>info@upgrisba.ac.id</small>
                     </div>
-                    <div id="note" class="text-secondary d-none d-xl-flex"><small>Layanan Informasi Publik Universitas PGRI Sumatera Barat</small></div>
+                    <div id="note" class="text-secondary d-none d-xl-flex"><small>Website Resmi Layanan Informasi Publik Universitas PGRI Sumatera Barat</small></div>
                     <div class="top-link">
-                    <a href="https://www.facebook.com/upgrisba.ac.id/?locale=id_ID" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="https://www.facebook.com/upgrisba.ac.id/?locale=id_ID" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
                         
                         <a href="https://www.instagram.com/@upgrisba" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
                         <a href="https://www.youtube.com/@STKIPPGRISumateraBarat" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i class="fab fa-youtube text-primary"></i></a>
@@ -56,7 +56,7 @@
         <div class="container-fluid bg-primary">
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                    <a href="home" class="navbar-brand">
+                    <a href="index.html" class="navbar-brand">
                         <h1 class="text-white fw-bold d-block">PPID<span class="text-secondary">UPGRISBA</span> </h1>
                     </a>
                     <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -66,9 +66,9 @@
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
                             <a href="home" class="nav-item nav-link active text-secondary">Home</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
+                                <a href="profil" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
                                 <div class="dropdown-menu rounded">
-                                <a href="tentang" class="dropdown-item">Tentang PPID UPGRISBA</a>
+                                    <a href="tentang" class="dropdown-item">Tentang PPID UPGRISBA</a>
                                     <a href="profil" class="dropdown-item">Profil Singkat PPID UPGRISBA</a>
                                     <a href="visimisi" class="dropdown-item">Visi dan Misi PPID UPGRISBA</a>
                                     <a href="tupok" class="dropdown-item">Tugas Pokok dan Fungsi PPID UPGRISBA</a>
@@ -87,9 +87,27 @@
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Standar Layanan</a>
                                 <div class="dropdown-menu rounded">
+                                    <a href="maklumat" class="dropdown-item">Maklumat Pelayanan Informasi Publik</a>
+                                    <a href="regulasi" class="dropdown-item">Regulasi</a>
+                                    <a href="sop" class="dropdown-item">SOP Layanan Informasi</a>
+                                    <a href="jadwal" class="dropdown-item">Jadwal Layanan Informasi</a>
+                                    <a href="fasilitas" class="dropdown-item">Fasilitas/Kelengkapan Layanan Informasi Publik</a>
+                                    <a href="biaya" class="dropdown-item">Biaya Layanan Informasi</a>
+                                    <a href="panduan" class="dropdown-item">Panduan Layanan Disabilitas</a>
+                                   
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan Informasi</a>
+                                <div class="dropdown-menu rounded">
                                     <a href="laporan" class="dropdown-item">Laporan Layanan Informasi</a>
                                     <a href="alurlayanan" class="dropdown-item">Alur dan Prosedur Layanan Informasi</a>
                                     <a href="alurkeberatan" class="dropdown-item">Alur dan Prosedur Keberatan Pengajuan Atas Informasi</a>
+                                    <a href="alursengketa" class="dropdown-item">Alur dan Prosedur Pengajuan Sengketa Ke Komisi Informasi</a>
+                                    <a href="tatacara" class="dropdown-item">Tata Cara Pengaduan Penyalahgunaan atau Pelanggaran</a>
+                                    <a href="mediacetak" class="dropdown-item">Kumpulan Informasi Melalui Media Cetak</a>
+                                    <a href="mediaonline" class="dropdown-item">Kumpulan Informasi Melalui Media Online</a>
+                                    <a href="dokumen" class="dropdown-item">Dokumen - Dokumen Informasi</a>
                                    
                                 </div>
                             </div>
@@ -97,19 +115,8 @@
                            
                         </div>
                     </div>
-                    <div class="d-none d-xl-flex flex-shirink-0">
-                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
-                            <a href="" class="position-relative animated tada infinite">
-                                <i class="fa fa-phone-alt text-white fa-2x"></i>
-                                <div class="position-absolute" style="top: -7px; left: 20px;">
-                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="d-flex flex-column pe-4 border-end">
-                            <span class="text-white-50">Hubungi Kami di?</span>
-                            <span class="text-secondary">Telp : (0751) 7053731</span>
-                        </div>
+                  
+                        
                         <div class="d-flex align-items-center justify-content-center ms-4 ">
                             <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
                         </div>
@@ -117,19 +124,14 @@
                 </nav>
             </div>
         </div>
-        <!-- Navbar End -->
-        <!-- body start -->
-        <div class="container-tentang" align="center">INFORMASI SETIAP SAAT UNIVERITAS PGRI SUMATERA BARAT</div>
+        <div class="container-tentang" align="center">INFORMASI YANG DISEDIAKAN SECARA SETIAP SAAT</div>
         <p>1. ISI DISINI KONTENNYA</p>
         <p>2</p>
         <p>2</p>
 </div>
-  <!-- Content here -->
-</div>
-        <!-- body end -->
-        
-         <!-- Footer Start -->
-         <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+
+
+        <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
             <div class="container pt-5 pb-4">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">

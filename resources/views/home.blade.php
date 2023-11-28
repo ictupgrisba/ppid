@@ -87,9 +87,27 @@
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Standar Layanan</a>
                                 <div class="dropdown-menu rounded">
+                                    <a href="maklumat" class="dropdown-item">Maklumat Pelayanan Informasi Publik</a>
+                                    <a href="regulasi" class="dropdown-item">Regulasi</a>
+                                    <a href="sop" class="dropdown-item">SOP Layanan Informasi</a>
+                                    <a href="jadwal" class="dropdown-item">Jadwal Layanan Informasi</a>
+                                    <a href="fasilitas" class="dropdown-item">Fasilitas/Kelengkapan Layanan Informasi Publik</a>
+                                    <a href="biaya" class="dropdown-item">Biaya Layanan Informasi</a>
+                                    <a href="panduan" class="dropdown-item">Panduan Layanan Disabilitas</a>
+                                   
+                                </div>
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan Informasi</a>
+                                <div class="dropdown-menu rounded">
                                     <a href="laporan" class="dropdown-item">Laporan Layanan Informasi</a>
                                     <a href="alurlayanan" class="dropdown-item">Alur dan Prosedur Layanan Informasi</a>
                                     <a href="alurkeberatan" class="dropdown-item">Alur dan Prosedur Keberatan Pengajuan Atas Informasi</a>
+                                    <a href="alurpengajuan" class="dropdown-item">Alur dan Prosedur Pengajuan Sengketa Ke Komisi Informasi</a>
+                                    <a href="tatacara" class="dropdown-item">Tata Cara Pengaduan Penyalahgunaan atau Pelanggaran</a>
+                                    <a href="mediacetak" class="dropdown-item">Kumpulan Informasi Melalui Media Cetak</a>
+                                    <a href="mediaonline" class="dropdown-item">Kumpulan Informasi Melalui Media Online</a>
+                                    <a href="dokumen" class="dropdown-item">Dokumen - Dokumen Informasi</a>
                                    
                                 </div>
                             </div>
@@ -97,19 +115,8 @@
                            
                         </div>
                     </div>
-                    <div class="d-none d-xl-flex flex-shirink-0">
-                        <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
-                            <a href="" class="position-relative animated tada infinite">
-                                <i class="fa fa-phone-alt text-white fa-2x"></i>
-                                <div class="position-absolute" style="top: -7px; left: 20px;">
-                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="d-flex flex-column pe-4 border-end">
-                            <span class="text-white-50">Hubungi Kami di?</span>
-                            <span class="text-secondary">Telp : (0751) 7053731</span>
-                        </div>
+                  
+                        
                         <div class="d-flex align-items-center justify-content-center ms-4 ">
                             <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
                         </div>
