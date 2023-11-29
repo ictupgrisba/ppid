@@ -643,9 +643,19 @@
 .testimonial-item {
     background: #e3f0eb;
 }
+
 .testimonial-item img {
-    height: 10em;
+    height: 15em;
     object-fit: cover;
+}
+
+.img-fit-cover {
+    height: 10em;
+    width: 100%;
+    object-fit: cover;
+}
+.img-fit-fill {
+    object-fit: fill;
 }
 
 .testimonial-carousel .owl-dots {
