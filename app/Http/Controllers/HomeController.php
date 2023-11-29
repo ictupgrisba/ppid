@@ -2,8 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Foundation\Application as FoundationApp;
+
 class HomeController extends Controller
 {
+    function viewMaintenance(): View|Factory|Application|FoundationApp
+    {
+        return view('maintenance');
+    }
     public function home() {
         return view('home');
     }
