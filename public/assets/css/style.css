@@ -90,7 +90,7 @@
     position: relative;
     display: inline-block;
     animation: mymove 5s infinite;
-    animation-timing-function: all;
+    animation-timing-function: ease; /*all;*/
 }
 
 @keyframes mymove {
@@ -111,7 +111,7 @@
     color: var(--bs-white);
     font-size: 18px;
     outline: none;
-    
+
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -263,7 +263,7 @@
     .carousel-item {
         min-height: 500px;
     }
-    
+
     .carousel-item img {
         min-height: 500px;
         object-fit: cover;
@@ -282,7 +282,7 @@
     .carousel-item {
         min-height: 400px;
     }
-    
+
     .carousel-item img {
         min-height: 400px;
         object-fit: cover;
@@ -416,7 +416,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .project-content a {
@@ -426,7 +426,7 @@
     border-radius: 10px;
 }
 
-.project-item:hover .project-content {
+/*.project-item:hover .project-content {
     opacity: 1;
     transition: .5s;
 }
@@ -434,9 +434,75 @@
 .project-item:hover .project-img::before,
 .project-item:hover .project-img::after {
     opacity: 0;
-}
+}*/
 
 /*** Project End ***/
+
+/*** Aspiration Start ***/
+
+.aspiration-img {
+    position: relative;
+    padding: 15px;
+}
+
+.aspiration-img::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    background: var(--bs-secondary);
+    border-radius: 10px;
+    opacity: 1;
+    z-index: -1;
+    transition: .5s;
+}
+
+.aspiration-img::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: var(--bs-danger);
+    border-radius: 10px;
+    opacity: 1;
+    z-index: -1;
+    transition: .5s;
+}
+
+.aspiration-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*opacity: 0;*/
+}
+
+.aspiration-content a {
+    display: inline-block;
+    padding: 20px 25px;
+    background: var(--bs-danger);
+    border-radius: 10px;
+}
+
+/*.project-item:hover .project-content {
+    opacity: 1;
+    transition: .5s;
+}
+
+.project-item:hover .project-img::before,
+.project-item:hover .project-img::after {
+    opacity: 0;
+}*/
+
+/*** Aspiration End ***/
 
 
 /*** Blog Start ***/
@@ -455,7 +521,7 @@
     position: absolute;
     top: 6px;
     left: -140px;
-    
+
 }
 
 .blog-btn-icon:hover .blog-icon-2 {
@@ -576,7 +642,20 @@
 
 .testimonial-item {
     background: #e3f0eb;
+}
 
+.testimonial-item img {
+    height: 15em;
+    object-fit: cover;
+}
+
+.img-fit-cover {
+    height: 10em;
+    width: 100%;
+    object-fit: cover;
+}
+.img-fit-fill {
+    object-fit: fill;
 }
 
 .testimonial-carousel .owl-dots {
@@ -664,3 +743,12 @@
 }
 
 /*** Footer End ***/
+/*.dropdown-menu {
+    width: 360px;
+    overflow: scroll;
+}
+*/
+.dropdown-menu a {
+    width: 20em;
+    white-space: normal;
+}
