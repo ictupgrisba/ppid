@@ -68,9 +68,10 @@
     <div class="container">
         <nav class="navbar navbar-dark navbar-expand-lg py-0">
             <a href="index.html" class="navbar-brand">
-                <h1 class="text-white fw-bold d-block">PPID<span class="text-secondary">UPGRISBA</span> </h1>
+                <h1 class="text-white fw-bold d-block">PPID<span class="text-secondary">UPGRISBA</span></h1>
             </a>
-            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
@@ -90,8 +91,10 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Informasi Publik</a>
                         <div class="dropdown-menu rounded">
                             <a href="infoberkala" class="dropdown-item">Informasi yang Disediakan Secara Berkala</a>
-                            <a href="infosetiapsaat" class="dropdown-item">Informasi yang Disediakan Secara Setiap Saat</a>
-                            <a href="infosertamerta" class="dropdown-item">Informasi yang Disediakan Secara Serta-Merta</a>
+                            <a href="infosetiapsaat" class="dropdown-item">Informasi yang Disediakan Secara Setiap
+                                Saat</a>
+                            <a href="infosertamerta" class="dropdown-item">Informasi yang Disediakan Secara
+                                Serta-Merta</a>
 
                         </div>
                     </div>
@@ -102,7 +105,8 @@
                             <a href="regulasi" class="dropdown-item">Regulasi</a>
                             <a href="sop" class="dropdown-item">SOP Layanan Informasi</a>
                             <a href="jadwal" class="dropdown-item">Jadwal Layanan Informasi</a>
-                            <a href="fasilitas" class="dropdown-item">Fasilitas / Kelengkapan Layanan Informasi Publik</a>
+                            <a href="fasilitas" class="dropdown-item">Fasilitas / Kelengkapan Layanan Informasi
+                                Publik</a>
                             <a href="biaya" class="dropdown-item">Biaya Layanan Informasi</a>
                             <a href="panduan" class="dropdown-item">Panduan Layanan Disabilitas</a>
                         </div>
@@ -112,9 +116,12 @@
                         <div class="dropdown-menu rounded">
                             <a href="laporan" class="dropdown-item">Laporan Layanan Informasi</a>
                             <a href="alurlayanan" class="dropdown-item">Alur dan Prosedur Layanan Informasi</a>
-                            <a href="alurkeberatan" class="dropdown-item">Alur dan Prosedur Keberatan Pengajuan Atas Informasi</a>
-                            <a href="alurpengajuan" class="dropdown-item">Alur dan Prosedur Pengajuan Sengketa Ke Komisi Informasi</a>
-                            <a href="tatacara" class="dropdown-item">Tata Cara Pengaduan Penyalahgunaan atau Pelanggaran</a>
+                            <a href="alurkeberatan" class="dropdown-item">Alur dan Prosedur Keberatan Pengajuan Atas
+                                Informasi</a>
+                            <a href="alurpengajuan" class="dropdown-item">Alur dan Prosedur Pengajuan Sengketa Ke Komisi
+                                Informasi</a>
+                            <a href="tatacara" class="dropdown-item">Tata Cara Pengaduan Penyalahgunaan atau
+                                Pelanggaran</a>
                             <a href="mediacetak" class="dropdown-item">Kumpulan Informasi Melalui Media Cetak</a>
                             <a href="mediaonline" class="dropdown-item">Kumpulan Informasi Melalui Media Online</a>
                             <a href="dokumen" class="dropdown-item">Dokumen - Dokumen Informasi</a>
@@ -359,7 +366,7 @@ $services = [
             <h5 class="text-primary">Ketegori</h5>
             <h1>Layanan & Informasi</h1>
         </div>
-        <div class="row g-5 services-inner">
+        <div class="row g-5 justify-content-center services-inner">
             @foreach($services as $i => $service)
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".{{$i +2}}s">
                     <div class="services-item bg-light">
@@ -415,7 +422,7 @@ $projects = [
             <h5 class="text-primary">Informasi Publik</h5>
             <h1>Jenis-jenis Informasi Publik</h1>
         </div>
-        <div class="row g-5">
+        <div class="row g-5 justify-content-center">
             @foreach($projects as $i => $project)
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".{{$i +2}}s">
                     <div class="project-item">
@@ -500,57 +507,6 @@ $informations = [
     </div>
 </div>
 <!-- Information End -->
-
-<?php
-$aspirations = [
-    [
-        "title" => "Lapor!",
-        "body" => "Sampaikan aspirasi dan pengaduan secara online",
-        "img_url" => "assets/img/project-1.jpg",
-        "detail_url" => "https://upgrisba.ac.id"
-    ],
-    [
-        "title" => "Formulir Informasi dan Keberatan",
-        "body" => "Dapatkan formulir online Tentang Pengajuan Informasi dan Keberatan",
-        "img_url" => "assets/img/project-2.jpg",
-        "detail_url" => "https://upgrisba.ac.id"
-    ],
-    [
-        "title" => "Informasi Mahasiswa Baru",
-        "body" => "Dapatkan Informasi Penerimaan Mahasiswa Baru Universitas PGRI Sumatera Barat",
-        "img_url" => "assets/img/project-3.jpg",
-        "detail_url" => "https://pmb.upgrisba.ac.id"
-    ]
-];
-?>
-    <!-- Aspiration Start -->
-<div class="container-fluid project py-5 mb-5">
-    <div class="container">
-        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-danger">Aspirasi Publik</h5>
-            <h1>Jenis-jenis Aspirasi Publik</h1>
-        </div>
-        <div class="row g-5">
-            @foreach($aspirations as $i => $aspiration)
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".{{$i +2}}s">
-                    <div class="aspiration-item">
-                        <div class="aspiration-img">
-                            <img src="{{$aspiration['img_url']}}" class="img-fluid w-100 rounded"
-                                 alt="{{$aspiration['title']}}">
-                            <div class="aspiration-content">
-                                <a href="{{$aspiration['detail_url']}}" class="text-center">
-                                    <h4 class="text-secondary">{{$aspiration['title']}}</h4>
-                                    <p class="m-0 text-white">{{$aspiration['body']}}</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </div>
-</div>
-<!-- Aspiration End -->
 
 <?php
 $policies = [
@@ -650,14 +606,12 @@ $policy_cover_url = "https://ppid.unp.ac.id/wp-content/uploads/2020/02/hukum.jpg
                             </ul>
                         </div>
                     @endfor
-                    <span>
-                            <i class="fa fa-plus mb-4 text-primary"></i>
-                            <a href="{{$policies[$i]['detail_url']}}">Selengkapnya</a>
-                        </span>
+                    <a href="{{$policies[$i]['detail_url']}}"><i class="fa fa-plus mb-4 text-primary"></i> Selengkapnya</a>
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="{{$policy_cover_url}}" class="img-fluid w-100 rounded wow fadeIn" alt="Maklumat" data-wow-delay=".7s">
+                <img src="{{$policy_cover_url}}" class="img-fluid w-100 rounded wow fadeIn" alt="Maklumat"
+                     data-wow-delay=".7s">
             </div>
         </div>
     </div>
@@ -665,101 +619,143 @@ $policy_cover_url = "https://ppid.unp.ac.id/wp-content/uploads/2020/02/hukum.jpg
 <!-- Policy End -->
 
 <!-- Schedule Start -->
-{{--<div class="container-fluid project py-5 mb-5">
+<div class="container-fluid blog py-5 mb-5">
     <div class="container">
-        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-primary">Agenda</h5>
-            <h1>Jadwal Kegiatan Terbaru</h1>
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".1s" style="max-width: 600px;">
+            <h5 class="text-primary">Jadwal</h5>
+            <h1>Agenda Kegiatan</h1>
         </div>
         <div class="row g-4">
-            <div class="col-md-4">
-                <span>
-                    <ul>
-                        <li>03</li>
-                        <li>Juli</li>
-                    </ul>
-                    <span>Libur Semester Genap</span>
-                </span>
-            </div>
+            @for($i = 0; $i < 4; $i++)
+                <div class="col-md-3 wow fadeIn" data-wow-delay=".{{$i +2}}s">
+                    <div class="blog-item position-relative bg-light rounded">
+                        <div class="blog-content text-center position-relative px-3 py-3 pt-4">
+                            <h5>Title</h5>
+                            <span class="text-secondary">Time</span>
+                            <p class="py-2">Body</p>
+                        </div>
+                    </div>
+                </div>
+            @endfor
+            <a href="#"><i class="fa fa-plus mb-4 text-primary"></i> Selengkapnya</a>
         </div>
     </div>
-</div>--}}
+</div>
 <!-- Schedule End -->
+    <!-- News Start -->
+<div class="container-fluid testimonial py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Berita</h5>
+            <h1>Kilas Berita UPGRISBA</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
+            @for($i = 0; $i < 4; $i++)
+                <div class="testimonial-item border">
+                    <img class="img-fluid" src="https://via.placeholder.com/150" alt="">
+                    <div class="border-top p-4 mx-4 align-items-center">
+                        <h4 class="text-secondary">Tujuan pengguna informasi Publik dan keterbukaan informasi publik</h4>
+                        <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
+                    </div>
+                </div>
+            @endfor
+        </div>
+    </div>
+</div>
+<!-- News End -->
 
-<!-- Contact Start -->
-<!-- <div class="container-fluid py-5 mb-5">
-     <div class="container">
-         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-             <h5 class="text-primary">Get In Touch</h5>
-             <h1 class="mb-3">Contact for any query</h1>
-             <p class="mb-2">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-         </div>
-         <div class="contact-detail position-relative p-5">
-             <div class="row g-5 mb-5 justify-content-center">
-                 <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                     <div class="d-flex bg-light p-3 rounded">
-                         <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                             <i class="fas fa-map-marker-alt text-white"></i>
-                         </div>
-                         <div class="ms-3">
-                             <h4 class="text-primary">Address</h4>
-                             <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">23 rank Str, NY</a>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                     <div class="d-flex bg-light p-3 rounded">
-                         <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                             <i class="fa fa-phone text-white"></i>
-                         </div>
-                         <div class="ms-3">
-                             <h4 class="text-primary">Call Us</h4>
-                             <a class="h5" href="tel:+0123456789" target="_blank">+012 3456 7890</a>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
-                     <div class="d-flex bg-light p-3 rounded">
-                         <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                             <i class="fa fa-envelope text-white"></i>
-                         </div>
-                         <div class="ms-3">
-                             <h4 class="text-primary">Email Us</h4>
-                             <a class="h5" href="mailto:info@example.com" target="_blank">info@example.com</a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <div class="row g-5">
-                 <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                     <div class="p-5 h-100 rounded contact-map">
-                         <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                     </div>
-                 </div>
-                 <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                     <div class="p-5 rounded contact-form">
-                         <div class="mb-4">
-                             <input type="text" class="form-control border-0 py-3" placeholder="Your Name">
-                         </div>
-                         <div class="mb-4">
-                             <input type="email" class="form-control border-0 py-3" placeholder="Your Email">
-                         </div>
-                         <div class="mb-4">
-                             <input type="text" class="form-control border-0 py-3" placeholder="Project">
-                         </div>
-                         <div class="mb-4">
-                             <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message"></textarea>
-                         </div>
-                         <div class="text-start">
-                             <button class="btn bg-primary text-white py-3 px-5" type="button">Send Message</button>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div> -->
-<!-- Contact End -->
+<!-- Videos Start -->
+<div class="container-fluid testimonial py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Video</h5>
+            <h1>Video UPGRISBA</h1>
+        </div>
+        <div class="row wow fadeIn" data-wow-delay=".5s">
+            @for($i = 0; $i < 2; $i++)
+                <div class="col-md-6">
+                    <iframe
+                        width="100%"
+                        height="200"
+                        src="https://www.youtube.com/embed/u747MN9_1-Q?si=hRlrXIjZPh9zoECU"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            @endfor
+        </div>
+    </div>
+</div>
+<!-- Videos End -->
+
+<?php
+$aspirations = [
+    [
+        "title" => "Lapor!",
+        "body" => "Sampaikan aspirasi dan pengaduan secara online",
+        "img_url" => "assets/img/project-1.jpg",
+        "detail_url" => "https://upgrisba.ac.id"
+    ],
+    [
+        "title" => "Formulir Informasi dan Keberatan",
+        "body" => "Dapatkan formulir online Tentang Pengajuan Informasi dan Keberatan",
+        "img_url" => "assets/img/project-2.jpg",
+        "detail_url" => "https://upgrisba.ac.id"
+    ],
+    [
+        "title" => "Informasi Mahasiswa Baru",
+        "body" => "Dapatkan Informasi Penerimaan Mahasiswa Baru Universitas PGRI Sumatera Barat",
+        "img_url" => "assets/img/project-3.jpg",
+        "detail_url" => "https://pmb.upgrisba.ac.id"
+    ]
+];
+?>
+    <!-- Aspiration Start -->
+<div class="container-fluid project py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-danger">Aspirasi Publik</h5>
+            <h1>Jenis-jenis Aspirasi Publik</h1>
+        </div>
+        <div class="row g-5">
+            @foreach($aspirations as $i => $aspiration)
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".{{$i +2}}s">
+                    <div class="aspiration-item">
+                        <div class="aspiration-img">
+                            <img src="{{$aspiration['img_url']}}" class="img-fluid w-100 rounded"
+                                 alt="{{$aspiration['title']}}">
+                            <div class="aspiration-content">
+                                <a href="{{$aspiration['detail_url']}}" class="text-center">
+                                    <h4 class="text-secondary">{{$aspiration['title']}}</h4>
+                                    <p class="m-0 text-white">{{$aspiration['body']}}</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+<!-- Aspiration End -->
+
+<!-- Gallery Start -->
+<div class="container-fluid project py-5 mb-5">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-danger">Gallery</h5>
+            <h1>Gallery Foto UPGRISBA</h1>
+        </div>
+        <div class="row g-2 align-content-center align-items-center justify-content-center">
+            @for($i = 0; $i < 10; $i++)
+                <div class="col-md-3 mx-1 img-thumbnail">
+                    <img class="img-fluid img-fit-cover" src="https://via.placeholder.com/150" alt="">
+                </div>
+            @endfor
+        </div>
+    </div>
+</div>
+<!-- Gallery End -->
 
 <!-- Footer Start -->
 <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
@@ -767,38 +763,36 @@ $policy_cover_url = "https://ppid.unp.ac.id/wp-content/uploads/2020/02/hukum.jpg
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
                 <a href="index.html">
-                    <h1 class="text-white fw-bold d-block">PPID<span class="text-secondary"></span> </h1>
+                    <h1 class="text-white fw-bold d-block">PPID<span class="text-secondary"></span></h1>
                 </a>
-                <p class="mt-4 text-light">Pejabat Pengelola Informasi dan Dokumentasi Universitas PGRI Sumatera Barat.</p>
+                <p class="mt-4 text-light">Pejabat Pengelola Informasi dan Dokumentasi Universitas PGRI Sumatera
+                    Barat.</p>
 
             </div>
             <div class="col-lg-3 col-md-6">
                 <a href="#" class="h3 text-secondary">Link Website</a>
                 <div class="mt-4 d-flex flex-column short-link">
                     <a href="https://www.upgrisba.ac.id" class="mb-2 text-white"><i class="fab fa-web text-primary"></i>Website Utama Upgrisba</a>
-                    <a href="https://www.facebook.com/upgrisba.ac.id/?locale=id_ID" class="mb-2 text-white"><i class="fab fa-facebook text-primary"></i>Universitas PGRI Sumatera Barat</a>
-                    <a href="https://www.instagram.com/@upgrisba" class="mb-2 text-white"><i class="fab fa-instagram text-primary"></i>Universitas PGRI Sumatera Barat</a>
-                    <a href="https://www.instagram.com/upgrisba" class="mb-2 text-white"><i class="fab fa-youtube text-primary"></i>Universitas PGRI Sumatera Barat</a>
+                    <a href="https://www.facebook.com/upgrisba.ac.id/?locale=id_ID" class="mb-2 text-white"><i
+                            class="fab fa-facebook text-secondary"></i> Universitas PGRI Sumatera Barat</a>
+                    <a href="https://www.instagram.com/@upgrisba" class="mb-2 text-white"><i
+                            class="fab fa-instagram text-secondary"></i> Universitas PGRI Sumatera Barat</a>
+                    <a href="https://www.instagram.com/upgrisba" class="mb-2 text-white"><i
+                            class="fab fa-youtube text-secondary"></i> Universitas PGRI Sumatera Barat</a>
 
                 </div>
             </div>
 
-            <!--  <div class="col-lg-3 col-md-6">
-                  <a href="#" class="h3 text-secondary">Help Link</a>
-                  <div class="mt-4 d-flex flex-column help-link">
-                      <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
-                      <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
-                      <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
-                      <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
-                      <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
-                  </div>
-              </div> -->
             <div class="col-lg-3 col-md-6">
                 <a href="#" class="h3 text-secondary">Hubungi Kami</a>
                 <div class="text-white mt-4 d-flex flex-column contact-link">
-                    <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Jl. Gunung Pangilun Padang. Kode Pos: 25137</a>
-                    <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> (0751) 7053731</a>
-                    <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> info@upgrisba.ac.id</a>
+                    <a href="#" class="pb-3 text-light border-bottom border-primary"><i
+                            class="fas fa-map-marker-alt text-secondary me-2"></i> Jl. Gunung Pangilun Padang. Kode Pos:
+                        25137</a>
+                    <a href="#" class="py-3 text-light border-bottom border-primary"><i
+                            class="fas fa-phone-alt text-secondary me-2"></i> (0751) 7053731</a>
+                    <a href="#" class="py-3 text-light border-bottom border-primary"><i
+                            class="fas fa-envelope text-secondary me-2"></i> info@upgrisba.ac.id</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -806,7 +800,10 @@ $policy_cover_url = "https://ppid.unp.ac.id/wp-content/uploads/2020/02/hukum.jpg
                 <!--<div class="col-lg-6 wow fadeIn" data-wow-delay=".3s"> -->
                 <div class="p-5 h-100 rounded contact-map">
 
-                    <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="rounded w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -814,7 +811,8 @@ $policy_cover_url = "https://ppid.unp.ac.id/wp-content/uploads/2020/02/hukum.jpg
         <hr class="text-light mt-5 mb-4">
         <div class="row">
             <div class="col-md-6 text-center text-md-start">
-                <span class="text-light"><a href="#" class="text-secondary"><i class="fas fa-copyright text-secondary me-2" align="center"></i> 2023 Universitas PGRI Sumatera Barat</a>, All right reserved.</span>
+                <span class="text-light"><a href="#" class="text-secondary"><i
+                            class="fas fa-copyright text-secondary me-2" align="center"></i> 2023 Universitas PGRI Sumatera Barat</a>, All right reserved.</span>
             </div>
             <div class="col-md-6 text-center text-md-end">
                 <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
