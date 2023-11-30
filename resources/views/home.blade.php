@@ -777,7 +777,7 @@ $aspirations = [
                             class="fab fa-facebook text-secondary"></i> Universitas PGRI Sumatera Barat</a>
                     <a href="https://www.instagram.com/@upgrisba" class="mb-2 text-white"><i
                             class="fab fa-instagram text-secondary"></i> Universitas PGRI Sumatera Barat</a>
-                    <a href="https://www.instagram.com/upgrisba" class="mb-2 text-white"><i
+                    <a href="https://www.youtube.com/upgrisba" class="mb-2 text-white"><i
                             class="fab fa-youtube text-secondary"></i> Universitas PGRI Sumatera Barat</a>
 
                 </div>
