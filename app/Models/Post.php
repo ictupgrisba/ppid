@@ -7,5 +7,31 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    use HasFactory;
+    protected $table = 'posts';
+    protected $primaryKey = 'id_post';
+    protected $keyType = 'integer';
+    protected $fillable = [
+        "id_kanal",
+        "id_user",
+        "id_foto",
+        "headline",
+        "waktu_entri",
+        "waktu_publish",
+        "waktu_publish_unix",
+        "waktu_update",
+        "judul_berita",
+        "url",
+        "isi_berita",
+        "keyword",
+        "deskripsi",
+        "hits",
+        "jenis_berita",
+        "status_publish",
+        "content_type",
+        "hapus",
+        "pilihan",
+        "tag_old",
+        "gambar",
+        "tanggal_agenda",
+    ];
 }
