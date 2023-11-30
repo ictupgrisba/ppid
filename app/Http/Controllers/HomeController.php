@@ -13,6 +13,11 @@ class HomeController extends Controller
     {
         return view('maintenance');
     }
+
+    function viewHomeDetail(): View|Factory|Application|FoundationApp
+    {
+        return \view('home-detail');
+    }
     public function home() {
         return view('home');
     }

@@ -15,6 +15,9 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'viewMaintenance']);
+
+Route::get('/home-detail', [HomeController::class, 'viewHomeDetail']);
+
 Route::get('/dev', [HomeController::class, 'home']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/tentang', [HomeController::class, 'tentang']);
