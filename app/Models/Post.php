@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Post extends Model
 {
-    protected $table = 'posts';
+    protected $table = 'post';
     protected $primaryKey = 'id_post';
     protected $keyType = 'integer';
     protected $fillable = [
@@ -34,4 +35,10 @@ class Post extends Model
         "gambar",
         "tanggal_agenda",
     ];
+    public function photo(): HasOne
+    {
+        return $this->hasOne(
+            Photo::class, 'id_foto', 'id_foto'
+        );
+    }
 }

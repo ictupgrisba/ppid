@@ -4,22 +4,23 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration {
+return new class extends Migration
+{
     /**
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('posts', function (Blueprint $table) {
-            $table->id('id_post')->nullable(false)->unique('id_post_unique');
-            $table->integer('id_kanal')->nullable(false);
-            $table->tinyInteger('id_user')->nullable(false);
-            $table->integer('id_foto')->nullable(false);
-            $table->tinyInteger('headline')->nullable(false);
-            $table->datetime('waktu_entri')->nullable(false);
-            $table->datetime('waktu_publish')->nullable(false);
-            $table->integer('waktu_publish_unix')->nullable(false);
-            $table->datetime('waktu_update')->nullable(false);
+        Schema::create('post', function (Blueprint $table) {
+            $table->id('id_post');
+            $table->integer('id_kanal');
+            $table->tinyInteger('id_user');
+            $table->unsignedBigInteger('id_foto')->nullable(false);
+            $table->tinyInteger('headline');
+            $table->datetime('waktu_entri')->nullable(false)->useCurrent();
+            $table->datetime('waktu_publish')->nullable(false)->useCurrent();
+            $table->integer('waktu_publish_unix');
+            $table->datetime('waktu_update')->nullable(false)->useCurrent();
             $table->string('judul_berita')->nullable(false);
             $table->string('url')->nullable(false);
             $table->text('isi_berita')->nullable(false);
@@ -35,6 +36,10 @@ return new class extends Migration {
             $table->string('gambar');
             $table->date('tanggal_agenda')->nullable(false);
             $table->timestamps();
+
+            $table->foreign('id_foto')
+                ->on('foto')
+                ->references('id_foto');
         });
     }
 
@@ -43,6 +48,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('post');
     }
 };

@@ -20,4 +20,10 @@ class PostRepositoryTest extends TestCase
         $collection = $this->postRepository->listOfPublishedScheduleWith($limit);
         self::assertCount($limit, $collection);
     }
+
+    public function testCollectNewsSuccess()
+    {
+        $collection = $this->postRepository->listOfSpotlightPublishedNews();
+        self::assertCount(6, $collection);
+    }
 }

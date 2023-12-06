@@ -13,5 +13,4 @@ class DatabaseTest extends TestCase
 
         self::assertNotNull($connection);
     }
-
 }
