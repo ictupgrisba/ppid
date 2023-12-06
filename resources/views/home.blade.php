@@ -302,9 +302,8 @@
         <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
             @foreach($newses as $news)
                 <div class="testimonial-item border">
-                    <img class="img-fluid" src="https://via.placeholder.com/150" alt="">
+                    <img class="img-fluid" src="{{$news['img_url'] ?? 'https://via.placeholder.com/150'}}" alt="">
                     <div class="border-top p-4 mx-4 align-items-center">
-                        <p class="mb-0">{{$news['gambar']}}</p>
                         <p class="mb-0">{{$news['judul_berita']}}</p>
                         {{--<h4 class="text-secondary text-truncate">{{$news['judul_berita']}}</h4>
                         <p class="mb-0">{!! $news['description'] !!}</p>--}}

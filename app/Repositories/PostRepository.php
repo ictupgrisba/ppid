@@ -62,18 +62,20 @@ class PostRepository
             ->limit(2)
             ->union($event_news);
 
-        /*$mapToViewsItem = function($item){
-            $item['description'] = explode(' ', $item['judul_berita']);
+        $mapToViewsItem = function($item){
+            // $item['description'] = explode(' ', $item['judul_berita']);
+            $base_url = asset('assets/media/' . $item['photo']['tahun_upload'] . '/' . $item['photo']['file_foto'] . $item['photo']['thumb'] . $item['photo']['ext']);
+            $item['img_url'] = $base_url;
+            // Log::debug($item);
             return $item;
-        };*/
-
-//        Log::debug("isModelRelated = ". Post::query()->getRelation('photo')->get());
-
+        };
+        // Log::debug("isModelRelated = ". Post::query()->getRelation('photo')->get());
         return Post::query()
             ->where($academic_params)
             ->orderByDesc('waktu_publish_unix')
             ->limit(2)
             ->union($student_news)
-            ->get();
+            ->get()
+            ->map($mapToViewsItem);
     }
 }
