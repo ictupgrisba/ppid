@@ -198,12 +198,16 @@
         <td><a href="#">Klik Disini</td>
         
       </tr>
-</div>
-      </tbody>
-  </table>
 
-  <p>3. RUANG PELAYANAN INFORMASI </p>
-  
+
+      </tbody>
+      </div>
+  </table>
+  <p>3. Ruang Pelayanan informasi</p>
+ 
+ 
+
+
 
 
 

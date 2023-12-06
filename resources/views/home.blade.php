@@ -175,7 +175,7 @@
                             Dokumentasi (PPID)</h1>
                         <p class="mb-4 text-white fs-5 animated fadeInDown">Universitas PGRI Sumatera Barat</p>
                         <a href="" class="me-2">
-                            <button type="button"
+                            <button type="button" 
                                     class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">
                                 Permohonan Informasi Publik
                             </button>

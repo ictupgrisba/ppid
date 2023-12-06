@@ -124,10 +124,11 @@
                 </nav>
             </div>
         </div>
-        <div class="container-tentang" align="center">MAKLUMAT PELAYANAN INFORMASI PUBLIK</div>
-        <p>1. ISI DISINI KONTENNYA</p>
-        <p>2</p>
-        <p>2</p>
+        <div class="container mt-3">
+  <h3 align="center"></h3>
+  <img src="assets/img/maklumat.png" class="mx-auto d-block" style="width:80%"> 
+</div>
+<div class="container mt-3">
 </div>
 
 
