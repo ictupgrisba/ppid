@@ -13,9 +13,10 @@ use App\Http\Controllers\HomeController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', [HomeController::class, 'viewMaintenance']);
+Route::get('/home-detail', [HomeController::class, 'viewHomeDetail']);
 
-Route::get('/', [HomeController::class, 'home']);
-// Route::get('/dev', [HomeController::class, 'home']);
+Route::get('/dev', [HomeController::class, 'viewHome']);
 Route::get('/about', [HomeController::class, 'about']);
 Route::get('/tentang', [HomeController::class, 'tentang']);
 Route::get('/profil', [HomeController::class, 'profil']);

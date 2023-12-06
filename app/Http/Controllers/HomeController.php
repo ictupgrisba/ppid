@@ -2,19 +2,43 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\HomeRepository;
+use App\Repositories\PostRepository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application as FoundationApp;
+use Illuminate\Support\Collection;
 
 class HomeController extends Controller
 {
+    private HomeRepository $homeRepository;
+    private PostRepository $postRepository;
+    public function __construct(HomeRepository $homeRepository, PostRepository $postRepository)
+    {
+        $this->homeRepository = $homeRepository;
+        $this->postRepository = $postRepository;
+    }
     function viewMaintenance(): View|Factory|Application|FoundationApp
     {
         return view('maintenance');
     }
-    public function home() {
-        return view('home');
+    function viewHomeDetail(): View|Factory|Application|FoundationApp
+    {
+        return \view('home-detail');
+    }
+
+    public function viewHome(): View|Factory|Application|FoundationApp {
+        $data = [
+            "newses" => $this->postRepository->listOfSpotlightPublishedNews(),
+            "schedules" => $this->postRepository->listOfPublishedScheduleWith(4),
+            "disclaimers" => $this->homeRepository->listOfDisclaimers(),
+            "services" => $this->homeRepository->listOfServices(),
+            "publicInformations" => $this->homeRepository->listOfPublicInformations(),
+            "informations" => $this->homeRepository->listOfInformations(),
+            "policy" => $this->homeRepository->dataOfPolicy(),
+        ];
+        return view('home', $data);
     }
     public function about() {
         return view('about');
