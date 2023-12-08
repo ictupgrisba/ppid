@@ -3,6 +3,7 @@
 namespace Tests\Repositories;
 
 use App\Repositories\PostRepository;
+use Illuminate\Support\Facades\Log;
 use Tests\TestCase;
 
 class PostRepositoryTest extends TestCase
@@ -18,6 +19,7 @@ class PostRepositoryTest extends TestCase
     {
         $limit = 6;
         $collection = $this->postRepository->listOfPublishedScheduleWith($limit);
+        Log::debug(json_encode($collection));
         self::assertCount($limit, $collection);
     }
 

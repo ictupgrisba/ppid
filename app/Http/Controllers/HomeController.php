@@ -37,6 +37,7 @@ class HomeController extends Controller
             "publicInformations" => $this->homeRepository->listOfPublicInformations(),
             "informations" => $this->homeRepository->listOfInformations(),
             "policy" => $this->homeRepository->dataOfPolicy(),
+            "aspirations" => $this->homeRepository->dataOfAspirations(),
         ];
         return view('home', $data);
     }

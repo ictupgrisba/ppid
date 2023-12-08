@@ -6,6 +6,8 @@ use App\Helper\Helper;
 use App\Models\Photo;
 use App\Models\Post;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Env;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Log;
 
 class PostRepository
@@ -13,8 +15,8 @@ class PostRepository
     function listOfPublishedScheduleWith(int $limit): Collection|array
     {
         $params = [
-            ['content_type', '=', 4],
-            ['status_publish', '=', 2]
+            ['content_type', '=', '4'],
+            ['status_publish', '=', '2']
         ];
         $mapToViewsItem = function($item){
             $item['title'] = Helper::dateBy($item['tanggal_agenda']);
@@ -59,22 +61,30 @@ class PostRepository
         $student_news = Post::query()
             ->where($student_params)
             ->orderByDesc('waktu_publish_unix')
-            ->limit(2)
-            ->union($event_news);
+            ->limit(2);
 
         $mapToViewsItem = function($item){
             // $item['description'] = explode(' ', $item['judul_berita']);
-            $base_url = asset('assets/media/' . $item['photo']['tahun_upload'] . '/' . $item['photo']['file_foto'] . $item['photo']['thumb'] . $item['photo']['ext']);
+            $base_url = \env('BASE_APP_URL') .
+                '/assets/media/' .
+                $item['photo']['tahun_upload'] . '/' .
+                $item['photo']['file_foto'] .
+                $item['photo']['thumb'] .
+                $item['photo']['ext'];
+
             $item['img_url'] = $base_url;
             // Log::debug($item);
             return $item;
         };
         // Log::debug("isModelRelated = ". Post::query()->getRelation('photo')->get());
-        return Post::query()
+        $academic_news = Post::query()
             ->where($academic_params)
             ->orderByDesc('waktu_publish_unix')
-            ->limit(2)
+            ->limit(2);
+
+        return $academic_news
             ->union($student_news)
+            ->union($event_news)
             ->get()
             ->map($mapToViewsItem);
     }
