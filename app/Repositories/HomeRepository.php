@@ -229,4 +229,28 @@ class HomeRepository
             ]
         ];
     }
+
+    function dataOfAspirations(): array
+    {
+        return [
+            [
+                "title" => "Lapor!",
+                "body" => "Sampaikan aspirasi dan pengaduan secara online",
+                "img_url" => "assets/img/project-1.jpg",
+                "detail_url" => "https://upgrisba.ac.id"
+            ],
+            [
+                "title" => "Formulir Informasi dan Keberatan",
+                "body" => "Dapatkan formulir online Tentang Pengajuan Informasi dan Keberatan",
+                "img_url" => "assets/img/project-2.jpg",
+                "detail_url" => "https://upgrisba.ac.id"
+            ],
+            [
+                "title" => "Informasi Mahasiswa Baru",
+                "body" => "Dapatkan Informasi Penerimaan Mahasiswa Baru Universitas PGRI Sumatera Barat",
+                "img_url" => "assets/img/project-3.jpg",
+                "detail_url" => "https://pmb.upgrisba.ac.id"
+            ]
+        ];
+    }
 }
