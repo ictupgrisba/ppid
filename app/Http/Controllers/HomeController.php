@@ -3,21 +3,23 @@
 namespace App\Http\Controllers;
 
 use App\Repositories\HomeRepository;
+use App\Repositories\PhotoRepository;
 use App\Repositories\PostRepository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application as FoundationApp;
-use Illuminate\Support\Collection;
 
 class HomeController extends Controller
 {
     private HomeRepository $homeRepository;
     private PostRepository $postRepository;
-    public function __construct(HomeRepository $homeRepository, PostRepository $postRepository)
+    private PhotoRepository $photoRepository;
+    public function __construct(HomeRepository $homeRepository, PostRepository $postRepository, PhotoRepository $photoRepository)
     {
         $this->homeRepository = $homeRepository;
         $this->postRepository = $postRepository;
+        $this->photoRepository = $photoRepository;
     }
     function viewMaintenance(): View|Factory|Application|FoundationApp
     {
@@ -38,6 +40,7 @@ class HomeController extends Controller
             "informations" => $this->homeRepository->listOfInformations(),
             "policy" => $this->homeRepository->dataOfPolicy(),
             "aspirations" => $this->homeRepository->dataOfAspirations(),
+            "photos" => $this->photoRepository->listOfUploadedFiles(),
         ];
         return view('home', $data);
     }

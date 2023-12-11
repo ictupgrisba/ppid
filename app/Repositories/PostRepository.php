@@ -25,7 +25,7 @@ class PostRepository
         };
         return Post::query()
             ->where($params)
-            ->orderBy('tanggal_agenda')
+            ->orderByDesc('tanggal_agenda')
             ->limit($limit)
             ->get()
             ->map($mapToViewsItem);
@@ -87,5 +87,15 @@ class PostRepository
             ->union($event_news)
             ->get()
             ->map($mapToViewsItem);
+    }
+
+    function listOfAlbumUrls()
+    {
+        /*'SELECT  a.*, GROUP_CONCAT(CONCAT(tahun_upload, "/",f.file_foto,f.thumb, f.ext) SEPARATOR "`") AS foto_thumb,
+                  GROUP_CONCAT(CONCAT(tahun_upload, "/",f.file_foto, f.ext) SEPARATOR "`") AS foto
+                  FROM tbl_album AS a
+                  LEFT JOIN foto AS f ON f.id_album=a.id_album
+                  WHERE 1 AND f.hapus=0 AND f.aktif=1 AND tanggal<>"0000-00-00"  AND publish=2 GROUP BY a.id_album
+                  ORDER BY tanggal DESC LIMIT ' . escape($perpage) . ',' . escape($offset)*/
     }
 }
