@@ -282,7 +282,7 @@
                         <div class="blog-content text-center position-relative px-3 py-3 pt-4">
                             <h5>{{$schedule['title']}}</h5>
                             <span class="text-secondary">{{$schedule['month']}}</span>
-                            <p class="py-2">{{$schedule['deskripsi']}}</p>
+                            <p class="py-2">{{$schedule['judul_berita']}}</p>
                         </div>
                     </div>
                 </div>
@@ -375,11 +375,11 @@
             <h1>Gallery Foto UPGRISBA</h1>
         </div>
         <div class="row g-2 align-content-center align-items-center justify-content-center">
-            @for($i = 0; $i < 10; $i++)
+            @foreach($photos as $i => $photo)
                 <div class="col-md-3 mx-1 img-thumbnail">
-                    <img class="img-fluid img-fit-cover" src="https://via.placeholder.com/150" alt="">
+                    <img class="img-fluid img-fit-cover" src="{{$photo}}" alt="upgrisba {{$i}}">
                 </div>
-            @endfor
+            @endforeach
         </div>
     </div>
 </div>
