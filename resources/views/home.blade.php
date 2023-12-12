@@ -165,8 +165,13 @@
                             <div class="services-content-icon">
                                 <i class="fa {{$service['icon']}} fa-7x mb-4 text-primary"></i>
                                 <h4 class="mb-3">{{strtoupper($service['title'])}}</h4>
-                                <p class="mb-4">{{ucwords($service['body'])}}</p>
-                                <a href="{{$service['detail_url']}}"
+                                <p class="mb-4">{{ucwords($service['body'] ?? '')}}</p>
+                                <?php
+                                    $src = $service['detail_url'] .
+                                        '?data='. urlencode($service['detail_data'] ?? '') .
+                                        '&h1=' . urlencode($service['body'] ?? '')
+                                ?>
+                                <a href="{{$src}}"
                                    class="btn btn-secondary text-white px-5 py-3 rounded-pill">Baca Selengkapnya</a>
                             </div>
                         </div>
