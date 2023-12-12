@@ -46,7 +46,7 @@ class HomeRepository
                 "icon" => "fa-envelope",
                 "title" => "dip",
                 "detail_url" => "/home-detail/iframe",
-                "detail_data" => "pdf/SALINAN-Permendikbud-NO-41-TAHUN-2020-TTG-LAYANAN-INFORMASI-PUBLIK.pdf",
+                "detail_data" => asset("assets/pdf/SALINAN-Permendikbud-NO-41-TAHUN-2020-TTG-LAYANAN-INFORMASI-PUBLIK.pdf"),
                 "body" => "Daftar informasi Publik yang sudah dimutahirkan",
             ],
             [
@@ -59,8 +59,28 @@ class HomeRepository
             [
                 "icon" => "fa-edit",
                 "title" => "formulir online",
-                "detail_url" => "https://upgrisba.ac.id",
-                "body" => null
+                "detail_url" => "/home-detail/row-card",
+                "detail_data" => json_encode([
+                    [
+                        "title" => "Formulir Permohonan Informasi",
+                        "cover_url" => "https://via.placeholder.com/150",
+                        "detail_data" => "https://docs.google.com/forms/d/e/1FAIpQLSe06HQ5eEdY96SmtKIf7nSnoKoLXKmltaoL65_2uckPkZnXXg/viewform?embedded=true",
+                        "detail_url" => "/home-detail/iframe",
+                    ],
+                    [
+                        "title" => "Formulir Pengajuan Keberatan",
+                        "cover_url" => "https://via.placeholder.com/150",
+                        "detail_data" => "https://docs.google.com/forms/d/e/1FAIpQLSe06HQ5eEdY96SmtKIf7nSnoKoLXKmltaoL65_2uckPkZnXXg/viewform?embedded=true",
+                        "detail_url" => "/home-detail/iframe",
+                    ],
+                    [
+                        "title" => "Formulir Survei Layanan Informasi",
+                        "cover_url" => "https://via.placeholder.com/150",
+                        "detail_data" => "https://docs.google.com/forms/d/e/1FAIpQLSe06HQ5eEdY96SmtKIf7nSnoKoLXKmltaoL65_2uckPkZnXXg/viewform?embedded=true",
+                        "detail_url" => "/home-detail/iframe",
+                    ],
+                ]),
+                "body" => "Formulir online"
             ],
             [
                 "icon" => "fa-bullhorn",
