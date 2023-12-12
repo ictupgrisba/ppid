@@ -39,19 +39,21 @@ class HomeRepository
             [
                 "icon" => "fa-user",
                 "title" => "profil ppid",
-                "detail_url" => "https://upgrisba.ac.id",
+                "detail_url" => "/profil",
                 "body" => "Pejabat Pengelola Informasi dan Dokumentasi" // nullable
             ],
             [
                 "icon" => "fa-envelope",
                 "title" => "dip",
-                "detail_url" => "https://upgrisba.ac.id",
-                "body" => "Daftar informasi Publik yang sudah dimutahirkan"
+                "detail_url" => "/home-detail/iframe",
+                "detail_data" => "pdf/SALINAN-Permendikbud-NO-41-TAHUN-2020-TTG-LAYANAN-INFORMASI-PUBLIK.pdf",
+                "body" => "Daftar informasi Publik yang sudah dimutahirkan",
             ],
             [
                 "icon" => "fa-book",
                 "title" => "standar pelayanan",
-                "detail_url" => "https://upgrisba.ac.id",
+                "detail_url" => "/home-detail/table-tile",
+                "detail_data" => json_encode($this->dataOfServicesStandard()),
                 "body" => "Pelayanan yang sudah distandarisasi"
             ],
             [
@@ -250,6 +252,90 @@ class HomeRepository
                 "body" => "Dapatkan Informasi Penerimaan Mahasiswa Baru Universitas PGRI Sumatera Barat",
                 "img_url" => "assets/img/project-3.jpg",
                 "detail_url" => "https://pmb.upgrisba.ac.id"
+            ]
+        ];
+    }
+
+    function dataOfServicesStandard(): array
+    {
+        return [
+            [
+                ["title" => "Keputusan Rektor Standar Pelayanan", "detail_url" => "#"],
+                ["title" => "Maklumat Pelayanan", "detail_url" => "#"],
+                ["title" => "Pedoman Pengelolaan Layanan Informasi Publik", "detail_url" => "#"]
+            ],
+            "Sandar Pelayanan" => [
+                ["title" => "Penerimaan Mahasiswa Baru Jalur SBMPTN", "detail_url" => "#"],
+                ["title" => "Surat Keterangan Pengganti Ijazah/ Transkrip Nilai yang Hilang/rusak/kesalahan data", "detail_url" => "#"],
+                ["title" => "Kerjasama Universitas PGRI Sumatera Barat", "detail_url" => "#"],
+                ["title" => "Informasi Publik", "detail_url" => "#"],
+                ["title" => "Sewa Barang Milik Negara", "detail_url" => "#"],
+                ["title" => "Kartu Keanggotaan Perpustakaan", "detail_url" => "#"],
+                ["title" => "Peminjaman Buku Bahan Perpustakaan", "detail_url" => "#"],
+                ["title" => "Kursus Bahasa Inggris", "detail_url" => "#"],
+                ["title" => "Tes Toefl Prediction", "detail_url" => "#"],
+                ["title" => "Penerjemah", "detail_url" => "#"],
+                ["title" => "Legalisir Ijazah, Transkrip Nilai dan SKPI", "detail_url" => "#"],
+                ["title" => "Pengujian Laboratorium", "detail_url" => "#"],
+                ["title" => "Pindah Mahasiswa antar PTN", "detail_url" => "#"],
+                ["title" => "Perkenalan Kehidupan Kampus Mahasiswa Baru", "detail_url" => "#"],
+                ["title" => "Cuti Kuliah", "detail_url" => "#"],
+                ["title" => "Akrif Kuliah Kembali", "detail_url" => "#"],
+                ["title" => "Kesehatan", "detail_url" => "#"],
+                ["title" => "Publikasi Ilmiah", "detail_url" => "#"],
+                ["title" => "Penelitian", "detail_url" => "#"],
+                ["title" => "Asrama Mahasiswa", "detail_url" => "#"],
+                ["title" => "Wisuda", "detail_url" => "#"],
+                ["title" => "Sertifikasi Dosen sebagai Pengusul", "detail_url" => "#"],
+                ["title" => "Praktek Lapangan Kependidikan Mahasiswa", "detail_url" => "#"],
+                ["title" => "Penerbitan Jurnal Ilmiah", "detail_url" => "#"],
+                ["title" => "Surat Keterangan Lulus", "detail_url" => "#"],
+                ["title" => "Pembuatan Kartu Mahasiswa", "detail_url" => "#"],
+                ["title" => "Penerimaan Mahasiswa Asing", "detail_url" => "#"],
+                ["title" => "Permohonan Pengurangan UKT", "detail_url" => "#"],
+                ["title" => "Rekomendasi Ujian Akhir Mahasiswa", "detail_url" => "#"],
+                ["title" => "Akreditasi Prodi", "detail_url" => "#"],
+                ["title" => "Pengaduan", "detail_url" => "#"],
+                ["title" => "Beasiswa Mahasiswa", "detail_url" => "#"],
+                ["title" => "Perjalanan Dinas Luar Negeri (PPLN) UPGRISBA", "detail_url" => "#"],
+                ["title" => "Proses Pembuatan Passport di UPGRISBA", "detail_url" => "#"],
+                ["title" => "Penerimaan Dosen Asing UPGRISBA", "detail_url" => "#"],
+                ["title" => "Penerimaan Mahasiswa Asing UPGRISBA", "detail_url" => "#"],
+                ["title" => "Visiting Researcher di UPGRISBA", "detail_url" => "#"],
+            ],
+            "STANDAR OPERASIONAL PROSEDUR (SOP)" => [
+                ["title" => "Pembuatan NIM", "detail_url" => "#"],
+                ["title" => "Pembuatan Kalender Akademik", "detail_url" => "#"],
+                ["title" => "Evaluasi Perkuliahan", "detail_url" => "#"],
+                ["title" => "Monitoring Perkuliahan", "detail_url" => "#"],
+                ["title" => "Buku Pedoman Akademik", "detail_url" => "#"],
+                ["title" => "Pembuatan SK Rektor", "detail_url" => "#"],
+                ["title" => "Penanganan Sengketa Informasi Publik", "detail_url" => "#"],
+                ["title" => "Penetapan dan Pemutakhiran DIP", "detail_url" => "#"],
+                ["title" => "Permohonan Informasi Publik", "detail_url" => "#"],
+                ["title" => "Pendokumentasian Informasi Publik", "detail_url" => "#"],
+                ["title" => "Uji Konsekuensi Informasi Publik", "detail_url" => "#"],
+                ["title" => "Pengajuan Keberatan Pelayanan Informasi Publik", "detail_url" => "#"],
+                ["title" => "Pengelolaan Pelayanan Pengaduan (Lapor)", "detail_url" => "#"],
+                ["title" => "Penyusunan Proker Akademik", "detail_url" => "#"],
+                ["title" => "Portal Akademik", "detail_url" => "#"],
+                ["title" => "Portal SIE", "detail_url" => "#"],
+                ["title" => "Portal Sistem Informasi Keuangan", "detail_url" => "#"],
+                ["title" => "Semester Pendek", "detail_url" => "#"],
+                ["title" => "Surat Akademik", "detail_url" => "#"],
+                ["title" => "Surat Izin Penelitian", "detail_url" => "#"],
+                ["title" => "Penerimaan Mahaisiswa Baru", "detail_url" => "#"],
+                ["title" => "Prosedur dan Diagram Alir Kenaikan Jabatan Akademik Dosen ke Asisten Ahli dan Lektor", "detail_url" => "#"],
+                ["title" => "Prosedur dan Diagram Alir Kenaikan Jabatan Akademik Dosen ke Lektor Kepala dan Guru Besar", "detail_url" => "#"],
+                ["title" => "Pembuatan Surat Tugas", "detail_url" => "#"],
+                ["title" => "Pengajuan Cuti Bagi PNS", "detail_url" => "#"],
+                ["title" => "Pengajuan Kenaikan Gaji Berkala", "detail_url" => "#"],
+                ["title" => "Pembukaan Program Studi Baru", "detail_url" => "#"],
+                ["title" => "Penutupan Program Studi", "detail_url" => "#"],
+                ["title" => "Monev Pembelajaran", "detail_url" => "#"],
+                ["title" => "Proses Audit Mutu Internal", "detail_url" => "#"],
+                ["title" => "Pengusulan Akreditasi Internasional", "detail_url" => "#"],
+                ["title" => "Pemindahan Pengelolaan Program Studi", "detail_url" => "#"]
             ]
         ];
     }

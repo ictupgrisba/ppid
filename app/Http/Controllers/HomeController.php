@@ -9,6 +9,7 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application as FoundationApp;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -25,9 +26,13 @@ class HomeController extends Controller
     {
         return view('maintenance');
     }
-    function viewHomeDetail(): View|Factory|Application|FoundationApp
+    function viewHomeDetail(Request $request, $type): View|Factory|Application|FoundationApp
     {
-        return \view('home-detail');
+        return \view('home-detail', [
+            "type" => $type,
+            "h1" => $request->input('h1'),
+            "data" => $request->input('data')
+        ]);
     }
 
     public function viewHome(): View|Factory|Application|FoundationApp {
