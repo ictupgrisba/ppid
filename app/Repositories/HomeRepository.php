@@ -46,7 +46,7 @@ class HomeRepository
                 "icon" => "fa-envelope",
                 "title" => "dip",
                 "detail_url" => "/home-detail/iframe",
-                "detail_data" => asset("assets/pdf/SALINAN-Permendikbud-NO-41-TAHUN-2020-TTG-LAYANAN-INFORMASI-PUBLIK.pdf"),
+                "detail_data" => asset("assets/pdf/Placeholder.pdf"),
                 "body" => "Daftar informasi Publik yang sudah dimutahirkan",
             ],
             [
@@ -63,19 +63,19 @@ class HomeRepository
                 "detail_data" => json_encode([
                     [
                         "title" => "Formulir Permohonan Informasi",
-                        "cover_url" => "https://via.placeholder.com/150",
+                        "cover_url" => asset("assets/img/project-4.jpg"),
                         "detail_data" => "https://docs.google.com/forms/d/e/1FAIpQLSe06HQ5eEdY96SmtKIf7nSnoKoLXKmltaoL65_2uckPkZnXXg/viewform?embedded=true",
                         "detail_url" => "/home-detail/iframe",
                     ],
                     [
                         "title" => "Formulir Pengajuan Keberatan",
-                        "cover_url" => "https://via.placeholder.com/150",
+                        "cover_url" => asset("assets/img/project-5.jpg"),
                         "detail_data" => "https://docs.google.com/forms/d/e/1FAIpQLSe06HQ5eEdY96SmtKIf7nSnoKoLXKmltaoL65_2uckPkZnXXg/viewform?embedded=true",
                         "detail_url" => "/home-detail/iframe",
                     ],
                     [
                         "title" => "Formulir Survei Layanan Informasi",
-                        "cover_url" => "https://via.placeholder.com/150",
+                        "cover_url" => asset("assets/img/project-6.jpg"),
                         "detail_data" => "https://docs.google.com/forms/d/e/1FAIpQLSe06HQ5eEdY96SmtKIf7nSnoKoLXKmltaoL65_2uckPkZnXXg/viewform?embedded=true",
                         "detail_url" => "/home-detail/iframe",
                     ],
@@ -85,21 +85,23 @@ class HomeRepository
             [
                 "icon" => "fa-bullhorn",
                 "title" => "pelayanan informasi publik",
-                "detail_url" => "https://upgrisba.ac.id",
-                "body" => null
+                "detail_url" => "/home-detail/table-tile",
+                "detail_data" => json_encode($this->dataOfServicePublicInformations()),
+                "body" => "pelayanan informasi publik"
             ],
             [
                 "icon" => "fa-lock",
                 "title" => "informasi yang dikecualikan",
-                "detail_url" => "https://upgrisba.ac.id",
-                "body" => null
+                "detail_url" => "/home-detail/iframe",
+                "detail_data" => asset("assets/pdf/Placeholder.pdf"),
+                "body" => "informasi yang dikecualikan"
             ],
-            [
-                "icon" => "fa-wheelchair",
-                "title" => "layanan disabilitas",
-                "detail_url" => "https://upgrisba.ac.id",
-                "body" => null
-            ],
+            /*[
+                 "icon" => "fa-wheelchair",
+                 "title" => "layanan disabilitas",
+                 "detail_url" => "https://upgrisba.ac.id",
+                 "body" => null
+            ],*/
         ];
     }
 
@@ -272,6 +274,55 @@ class HomeRepository
                 "body" => "Dapatkan Informasi Penerimaan Mahasiswa Baru Universitas PGRI Sumatera Barat",
                 "img_url" => "assets/img/project-3.jpg",
                 "detail_url" => "https://pmb.upgrisba.ac.id"
+            ]
+        ];
+    }
+
+    function dataOfServicePublicInformations(): array
+    {
+        return [
+            "PPID" => [
+                ["title" => "Tugas Dan Fungsi Mengelola Informasi Publik", "detail_url" => "#"],
+                ["title" => "Struktur PPID", "detail_url" => "#"],
+                ["title" => "Peraturan Rektor PPID", "detail_url" => "#"],
+                ["title" => "Daftar Informasi Publik (DIP) yang Telah Dimutakhirkan", "detail_url" => "#"],
+                ["title" => "Laporan Layanan Informasi Publik", "detail_url" =>
+                    [
+                        "2018" => "#",
+                        "2019" => "#",
+                        "2020" => "#",
+                        "2021" => "#",
+                        "2022" => "#"
+                    ]
+                ],
+                ["title" => "Bukti Laporan Layanan Informasi Publik Ke Komisi Informasi", "detail_url" =>
+                    [
+                        "2019" => "#",
+                        "2020" => "#",
+                        "2021" => "#",
+                        "2022" => "#"
+                    ]
+                ],
+                ["title" => "Laporan Layanan Informasi Publik Tahun 2018 Ke Komisi Informasi", "detail_url" => "#"],
+                ["title" => "Laporan Survey Kepuasan Masyarakat Pelayanan Informasi", "detail_url" =>
+                    [
+                        "Laporan 2019" => "#",
+                        "Laporan 2020" => "#",
+                        "Laporan 2021" => "#",
+                        "Laporan 2022" => "#",
+                        "Laporan 2023" => "#"
+                    ]
+                ],
+            ],
+            "Fasilitas/kelengkapan layanan informasi publik" => [
+                ["title" => "Meja, kursi, kursi tunggu dan sarana penerimaan (desk information)", "detail_url" =>
+                    ["Formulir" => "#", "Tanda Terima" => "#"]
+                ],
+                ["title" => "Formulir Keberatan (Offline)", "detail_url" => "#"],
+                ["title" => "Formulir Online", "detail_url" => "#"],
+                ["title" => "Jadwal pelayanan informasi publik", "detail_url" => "#"],
+                ["title" => "Profil Pegawai", "detail_url" => "#"],
+                ["title" => "Daftar Penetapan Tarif Layanan", "detail_url" => "#"],
             ]
         ];
     }
