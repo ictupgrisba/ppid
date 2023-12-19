@@ -67,13 +67,15 @@ class PostRepository
             // $item['description'] = explode(' ', $item['judul_berita']);
             $base_url = \env('BASE_APP_URL') .
                 '/assets/media/' .
-                $item['photo']['tahun_upload'] . '/' .
-                $item['photo']['file_foto'] .
-                $item['photo']['thumb'] .
-                $item['photo']['ext'];
+                ($item['photo']['tahun_upload'] ?? '') . '/' .
+                ($item['photo']['file_foto'] ?? '') .
+                ($item['photo']['thumb'] ?? '') .
+                ($item['photo']['ext'] ?? '');
 
-            $item['img_url'] = $base_url;
-            // Log::debug($item);
+            $item['img_url'] = $item['photo']
+                ? $base_url
+                : 'https://via.placeholder.com/150';
+
             return $item;
         };
         // Log::debug("isModelRelated = ". Post::query()->getRelation('photo')->get());
