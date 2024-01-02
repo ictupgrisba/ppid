@@ -40,7 +40,7 @@
                                 @if(is_string($row->detail_url))
                                     <a target="__blank" href="{{$row->detail_url}}">View</a>
                                 @else
-                                    @foreach($row->detail_url as $text => $url)
+                                    @foreach(json_decode($row->detail_url) as $text => $url)
                                         <div class="py-1"><a target="__blank" href="{{$url ?? '#'}}">{{$text}}</a></div>
                                     @endforeach
                                 @endif
@@ -49,6 +49,32 @@
                     @endforeach
                 @endforeach
             </table>
+        @elseif($type == 'text-list')
+            @foreach(json_decode($data ?? '') as $i => $card)
+                <div class="team-item wow fadeIn" data-wow-delay=".{{$i +2}}s">
+                    <div class="team-content">
+                        <div class="team-img-icon">
+                            <div class="team-img rounded-circle">
+                                <img src="{{$card->cover_url}}" class="img-fluid w-100 rounded-circle" alt="{{$card->title}}">
+                            </div>
+                            <div class="team-name text-center py-3 mb-4">
+                                <a href="{{$card->detail_url . '?data=' . urlencode($card->detail_data)}}">{{$card->title}}</a>
+                                <p class="m-0">Formulir</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        @elseif($type == 'article')
+            <div class="col-md-12">
+                <div class="mb-4">
+                    <span><i class="fa fa-solid fa-calendar"></i> <span>{{date('M d, Y')}}</span></span>
+                    <span class="mx-2"><i class="fa fa-solid fa-user"></i> <span>PPID</span></span>
+                    <span class="mx-2"><i class="fa fa-solid fa-folder"></i> <span>Artikel</span></span>
+                    <span><i class="fa fa-solid fa-comment"></i> <span>0 Komentar</span></span>
+                </div>
+                {!! $data !!}
+            </div>
         @endif
     </div>
 </div>

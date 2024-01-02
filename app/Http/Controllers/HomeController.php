@@ -36,6 +36,8 @@ class HomeController extends Controller
     }
 
     public function viewHome(): View|Factory|Application|FoundationApp {
+        $publicInfoData = $this->homeRepository->listOfServices()[3];
+
         $data = [
             "newses" => $this->postRepository->listOfSpotlightPublishedNews(),
             "schedules" => $this->postRepository->listOfPublishedScheduleWith(4),
@@ -46,6 +48,9 @@ class HomeController extends Controller
             "policy" => $this->homeRepository->dataOfPolicy(),
             "aspirations" => $this->homeRepository->dataOfAspirations(),
             "photos" => $this->photoRepository->listOfUploadedFiles(),
+            "publicInfoUrl" => $publicInfoData['detail_url'] .
+                '?data='. urlencode($publicInfoData['detail_data'] ?? '') .
+                '&h1=' . urlencode($publicInfoData['body'] ?? '')
         ];
         return view('home', $data);
     }

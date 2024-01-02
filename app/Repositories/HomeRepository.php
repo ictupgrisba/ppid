@@ -60,26 +60,7 @@ class HomeRepository
                 "icon" => "fa-edit",
                 "title" => "formulir online",
                 "detail_url" => "/home-detail/row-card",
-                "detail_data" => json_encode([
-                    [
-                        "title" => "Formulir Permohonan Informasi",
-                        "cover_url" => asset("assets/img/project-4.jpg"),
-                        "detail_data" => "https://docs.google.com/forms/d/e/1FAIpQLSe06HQ5eEdY96SmtKIf7nSnoKoLXKmltaoL65_2uckPkZnXXg/viewform?embedded=true",
-                        "detail_url" => "/home-detail/iframe",
-                    ],
-                    [
-                        "title" => "Formulir Pengajuan Keberatan",
-                        "cover_url" => asset("assets/img/project-5.jpg"),
-                        "detail_data" => "https://docs.google.com/forms/d/e/1FAIpQLSe06HQ5eEdY96SmtKIf7nSnoKoLXKmltaoL65_2uckPkZnXXg/viewform?embedded=true",
-                        "detail_url" => "/home-detail/iframe",
-                    ],
-                    [
-                        "title" => "Formulir Survei Layanan Informasi",
-                        "cover_url" => asset("assets/img/project-6.jpg"),
-                        "detail_data" => "https://docs.google.com/forms/d/e/1FAIpQLSe06HQ5eEdY96SmtKIf7nSnoKoLXKmltaoL65_2uckPkZnXXg/viewform?embedded=true",
-                        "detail_url" => "/home-detail/iframe",
-                    ],
-                ]),
+                "detail_data" => json_encode($this->dataOfInvokePublicInfos()),
                 "body" => "Formulir online"
             ],
             [
@@ -140,6 +121,20 @@ class HomeRepository
         return [
             "maklumat_url" => "https://via.placeholder.com/150",
             "data" => [
+                /*[
+                    "title" => "Kutipan Pidato Ketua STKIP PGRI Sumbar Wisuda Ke 47",
+                    "detail_url" => "/home-detail/article",
+                    "detail_data" => `<p>................................... Hadirin yang terhormat,</p>
+<p>Pada kesempatan berbahagia ini kami sampaikan bahwa, STKIP PGRI  Sumbar sebagai sebuah institusi yang diamanahkan untuk menghasilkan  calon pendidik (guru) dan tenaga kependidikan, secara aktif terus  berupaya untuk meningkatkan kualifikasi lulusannya, ini dilakukan dalam  bentuk peningkatan kualitas layanan dan fasilitas yangtersedia bagi  kenyamanan mahasiswa dalam menimba ilmu. Mengingat pentingnya  meningkatkan mutu layanan terhadap semua pihak (stakeholder) dan  lulusannya, Maka STKI PGRI sumatera Barat telah merancang beberapa  program pengembangan lima tahun yang tercantum dalam restra 2012-2016.</p>
+<p>pengembangan yang dilakukan secara bertahap manajemen tata kelola,  dan upaya peningkatan mutu lulusannya. Dalam kurun waktu satu tahun  terakhir beberapa pengembangan yang telah dilakukan STKIP PGRI Sumatera  Barat adalah ;</p>
+<ol>
+<li>sistem Informasi akademik yang berbasis web saat ini telah memasuki  tahun ketiga dalam pengoperasiannya. Tentunya penerapan KRS dan LHS  Online, sudah semakin memperlihatkan efektifitas dan efisien kerja.  Kendala dan Masalah yang ditemui diupayakan sesegera mungkin diatasi  sehingga tidak mengganggu kenyamanan mahasiswa dalam menyelesaikan  urusan akademik.</li>
+<li>Pengembangan Alikasi ejournal STKIP PGRI Sumbar, yang diperuntukkan  sebagai wadah memplubikasikan karya ilmiah mahasiswa maupun dosen, saat  ini sudah memasukin tahun kedua dalam penerapannya. bahkan untuk karya  ilmiah wisudahan yang ke 47 ini sudah di muat diakses secara online di <a href="http://ejournal-s1.stkip-pgri-sumbar.ac.id/" target="_blank">http://ejournal-s1.stkip-pgri-sumbar.ac.id</a> .&nbsp; ini merupakan bentuk komitmen kami dalam membentuk probadi yang  jujur dan bertanggung jawab atas karyanya. kami sangat menyadari bahwa  keprihatinan kemendiknas dan beberapa pihak atas kejujuran karya ilmiah,  semakin maraknya plagiarisme tentunya akan dapat kita minimalisir  dengan penyediaan e-journal ini.</li>
+<li>Pendirian program studi yang baru yaitu, Prodi Pendidikan Fisika dan  Informatika dan Komputer yang dimaksud sebagai salah satu upaya  memenuhi permintaan pasar (Masyarakat) Mulai Agustus 2013 (tahun ajaran  2013) ini sudah keluar izin operasionalnya dan langsung terakreditasi  dan pada semester ini sudah memasuki semester pertama dalam proses  pembelajarannya. Dengan demikian, mulai tahun 2013 ini STKIP PGRI Sumbar  sudah memilik 11 Program Studi</li>
+<li>Pembangunan Gedung perkuliahan berlamtai tiga denga 35 ruuang  kuliah, dan juga dilengkapi ruang dosen, laboratorium, perpustakaan  serta kantor prodi, dan pada semester ganjil ini sudah dapat digunakan  untuk perkuliahan dua program studi baru lengkap dengan laboratoriumnya.</li>
+<li>dimulainya untuk pertama kali pada wisuda ke 47 ini,  apresiasi/pemberian penghargaan kampus kepada wisudawan/ti yang  berprestasi dibidang pengembangan penalaran, minat dan bakat melalui  kegiatan ekstrakurikuler sehingga pembentukan sarjana pendidikan yang  paripurna sebagaimana yang diharapkan dan digariskan kemendiknas dapat  diwujudkan pemberian sertifikat / penghargaan ini diharapkan dapat  meningkatkan semangat dan keterlibatan mahasiswa dalam berbagai kegiatan  kemahasiswaan baik didalam maupun diluar kampus, yang pada gilirannya  kegiatan kegiatan yang mereka ikuti secara langsung akan mempengaruhi  pembentukan karakter dan softskill mereka setelah lulus&nbsp; dan mengapdi  sebagai pendidik kedepannya.</li>
+</ol>`,
+                ],*/
                 [
                     "detail_url" => "https://upgrisba.ac.id",
                     "body" => "Surat Edaran Komisi Informasi Pusat tentang Pelayanan Informasi dalam Masa Darurat Kesehatan Akibat COVID-19",
@@ -275,6 +270,30 @@ class HomeRepository
                 "img_url" => "assets/img/project-3.jpg",
                 "detail_url" => "https://pmb.upgrisba.ac.id"
             ]
+        ];
+    }
+
+    function dataOfInvokePublicInfos(): array
+    {
+        return [
+            [
+                "title" => "Permohonan Informasi",
+                "cover_url" => asset("assets/img/ic-info.png"),
+                "detail_data" => "https://docs.google.com/forms/d/e/1FAIpQLSe06HQ5eEdY96SmtKIf7nSnoKoLXKmltaoL65_2uckPkZnXXg/viewform?embedded=true",
+                "detail_url" => "/home-detail/iframe",
+            ],
+            [
+                "title" => "Pengajuan Keberatan",
+                "cover_url" => asset("assets/img/ic-keberatan.png"),
+                "detail_data" => "https://docs.google.com/forms/d/e/1FAIpQLSe06HQ5eEdY96SmtKIf7nSnoKoLXKmltaoL65_2uckPkZnXXg/viewform?embedded=true",
+                "detail_url" => "/home-detail/iframe",
+            ],
+            [
+                "title" => "Survei Layanan Informasi",
+                "cover_url" => asset("assets/img/ic-survei.png"),
+                "detail_data" => "https://docs.google.com/forms/d/e/1FAIpQLSe06HQ5eEdY96SmtKIf7nSnoKoLXKmltaoL65_2uckPkZnXXg/viewform?embedded=true",
+                "detail_url" => "/home-detail/iframe",
+            ],
         ];
     }
 

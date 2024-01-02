@@ -67,7 +67,7 @@
 <div class="container-fluid bg-primary">
     <div class="container">
         <nav class="navbar navbar-dark navbar-expand-lg py-0">
-            <a href="./" class="navbar-brand">
+            <a href="{{asset('/')}}" class="navbar-brand">
                 <h1 class="text-white fw-bold d-block">PPID<span class="text-secondary">UPGRISBA</span></h1>
             </a>
             <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
@@ -76,9 +76,9 @@
             </button>
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                    <a href="home" class="nav-item nav-link active text-secondary">Home</a>
+                    <span href="home" class="nav-item nav-link active text-secondary">Home</span>
                     <div class="nav-item dropdown">
-                        <a href="profil" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
+                        <span class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</span>
                         <div class="dropdown-menu rounded">
                             <a href="tentang" class="dropdown-item">Tentang PPID UPGRISBA</a>
                             <a href="profil" class="dropdown-item">Profil Singkat PPID UPGRISBA</a>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Informasi Publik</a>
+                        <span class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Informasi Publik</span>
                         <div class="dropdown-menu rounded">
                             <a href="infoberkala" class="dropdown-item">Informasi yang Disediakan Secara Berkala</a>
                             <a href="infosetiapsaat" class="dropdown-item">Informasi yang Disediakan Secara Setiap
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Standar Layanan</a>
+                        <span class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Standar Layanan</span>
                         <div class="dropdown-menu rounded">
                             <a href="maklumat" class="dropdown-item">Maklumat Pelayanan Informasi Publik</a>
                             <a href="regulasi" class="dropdown-item">Regulasi</a>
@@ -112,7 +112,7 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan Informasi</a>
+                        <span class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan Informasi</span>
                         <div class="dropdown-menu rounded">
                             <a href="laporan" class="dropdown-item">Laporan Layanan Informasi</a>
                             <a href="alurlayanan" class="dropdown-item">Alur dan Prosedur Layanan Informasi</a>
@@ -130,8 +130,6 @@
                     </div>
                 </div>
             </div>
-
-
             {{--<div class="d-flex align-items-center justify-content-center ms-4 ">
                 <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
             </div>--}}
